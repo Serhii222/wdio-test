@@ -12,7 +12,7 @@ describe('SignUp button tests', () => {
     it('Continue button after SignUp button should be visible', async () => {
         const signUpBtn =  await $('[action="/signup"] button[type=submit]');
         await signUpBtn.click();
-        const continueBtn = await $('[action="/signup"] #email-container [type=button]');
+        continueBtn = await $('[action="/signup"] #email-container [type=button]');
         await continueBtn.waitForDisplayed({ timeout: 7000 });
         await expect(continueBtn).toBeDisplayed();
     })

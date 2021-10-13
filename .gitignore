@@ -1,1 +1,7 @@
-/node_modules/
+/httpRequests/
+/workspace.xml
+node_modules/
+.log
+.xml
+.idea/
+

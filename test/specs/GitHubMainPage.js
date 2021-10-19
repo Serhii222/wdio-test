@@ -1,8 +1,8 @@
 describe('SignUp button tests', () => {
     
-    // beforeEach(async ()=> {
-    // await browser.url('github.com');
-    // })
+    beforeEach(async ()=> {
+    await browser.url('github.com');
+    })
 
     it('Text on SignUp button should be "Sign up for GitHub"', async () => {
         const signUpBtn = await $('[action="/signup"] button[type=submit]');
@@ -21,33 +21,28 @@ describe('SignUp button tests', () => {
         const emailInput = await $('#user_email');
         await emailInput.setValue('serhii.ivanchenko@business-class.com');
         await expect(emailInput).toHaveValue('serhii.ivanchenko@business-class.com');
-    })
-
-    it('Items in "Категории" list should have correct url', async () => {
-       
-        await browser.url('coursehunter.net/categories');
-        let elementUrlList = await $$('div.categories-list a.categories-item:nth-child(-n+6)');
-         for(let element of elementUrlList) {
-            let hrefElement = await element.getAttribute('href');
-            await (await element).click();
-            await expect((await browser.getUrl()).endsWith(await hrefElement)).toEqual(true);
-            
-            await browser.url('coursehunter.net/categories');
-        }
     })})
 
-    it.only('Search should work correctly', async () => {
+    // it('Items in "Категории" list should have correct url', async () => {
+       
+    //     await browser.url('coursehunter.net/categories');
+    //     let elementUrlList = await $$('div.categories-list a.categories-item:nth-child(-n+6)');
+    //      for(let element of elementUrlList) {
+    //         let hrefElement = await element.getAttribute('href');
+    //         await (await element).click();
+    //         await expect((await browser.getUrl()).endsWith(await hrefElement)).toEqual(true);
+            
+    //         await browser.url('coursehunter.net/categories');
+    //     }
+    // })})
 
-        await browser.url('coursehunter.net');
-        let mainSearchBtn = await $('#mainSearch');
-        await mainSearchBtn.click();
-        await mainSearchBtn.setValue('qa');
-        await browser.keys(['Meta', 'Enter']);
-        let courseList = await $$('article.course');
-        for(let element of courseList) {
-            let nameElement = await element.getAttribute('data-name');
-            await expect(await nameElement.includes('QA')).toEqual(true);
-        }
-    })
+    // it('Search should work correctly', async () => {
 
+    //     await browser.url('coursehunter.net');
+    //     await $('#mainSearch').setValue('qa\n');
+    //     await browser.pause(3000);
 
+    //     let courseList = await $$('article.course');
+    //     for(let element of courseList) {
+    //         expect(await (await element.getAttribute('data-name')).includes('QA')).toEqual(true);
+    //     }})

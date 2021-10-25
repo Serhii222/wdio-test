@@ -76,7 +76,7 @@ exports.config = {
         ],
 
         current: [
-            "test/specs/GitHubMainPage.js",
+            "test/specs/CourseHunterTests.js",
         ],
     //    current: ["test/specs/GitHubMainPage.js"],
     },

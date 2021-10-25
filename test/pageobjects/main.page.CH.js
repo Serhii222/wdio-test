@@ -18,4 +18,4 @@ module.exports = class Page {
     }
 }
 
-module.exports = new Page();
+// module.exports = new Page();

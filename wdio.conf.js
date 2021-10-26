@@ -70,7 +70,15 @@ exports.config = {
     }],
 
     suites: {
-        current: ["test/specs/CourseHunterTests.js"],
+        all: [
+            "test/specs/CourseHunterTests.js",
+            "test/specs/GitHubMainPage.js"
+        ],
+
+        current: [
+            "test/specs/CourseHunterTests.js",
+        ],
+    //    current: ["test/specs/GitHubMainPage.js"],
     },
     //
     // ===================

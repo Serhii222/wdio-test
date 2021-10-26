@@ -2,6 +2,7 @@
   "scripts": {
 
     "test": "wdio wdio.conf.js",
+    "test-all": "yarn test --suite all",
     "test-current": "yarn test --suite current"
   },
   "dependencies": {

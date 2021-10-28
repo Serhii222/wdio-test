@@ -24,4 +24,4 @@
     "node_modules/expect-webdriverio/types/expect-webdriverio.d.ts",
     "node_modules/expect-webdriverio/types/jest-global.d.ts",
   ]
-}z
+}

@@ -7,7 +7,7 @@ describe('SignUp button tests', () => {
         await browser.url('https://github.com/');
     });
 
-    it('Text on SignUp button should be "Sign up for GitHub"', async (): Promise<void> => {
+    it('Text on SignUp button should be "Sign up for GitHub"', async () => {
         await expect(loginPageGitHub.signUpBtn.toHaveText('Sign up for GitHub'));
     })
 

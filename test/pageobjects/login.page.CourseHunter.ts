@@ -1,11 +1,13 @@
-const Page = require('./main.page.CH');
 
-class LoginPage extends Page{
+let PageCourseHunter : any = require('./main.page.CourseHunter');
+
+
+class LoginPageCourseHunter extends PageCourseHunter{
     get inputEmail () { return $('input[type="email"]') }
     get inputPassword () { return $('input[type="password"]') }
     get btnSubmit () { return $('button[type="submit"]') }
 
-    async loginUser (email, password) {
+    async loginUser (email : string, password : string) {
         await this.inputEmail.setValue(email);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
@@ -16,4 +18,4 @@ class LoginPage extends Page{
     }
 }
 
-module.exports = new LoginPage();
+module.exports = new LoginPageCourseHunter();

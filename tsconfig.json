@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+      "outDir": "./.tsbuild/",
+      "sourceMap": false,
+      "target": "es2019",
+      "module": "commonjs",
+      "removeComments": true,
+      "noImplicitAny": true,
+      "strictPropertyInitialization": true,
+      "strictNullChecks": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "types": [
+          "node",
+          "webdriverio/async",
+          "@wdio/mocha-framework",
+          "@wdio/devtools-service",
+          "wdio-intercept-service",
+      ],
+  },
+  "include": [
+    "./**/**/*.ts",
+    "node_modules/webdriverio/async.d.ts",
+    "node_modules/expect-webdriverio/types/expect-webdriverio.d.ts",
+    "node_modules/expect-webdriverio/types/jest-global.d.ts",
+  ]
+}z

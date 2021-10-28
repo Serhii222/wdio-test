@@ -1,0 +1,2160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @wdio/types
+20 silly mapToRegistry name @wdio/types
+21 silly mapToRegistry scope (from package name) @wdio
+22 verbose mapToRegistry no registry URL found in name for scope @wdio
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+26 verbose request uri https://registry.npmjs.org/@wdio%2ftypes
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 10:39:51
+29 verbose request id 7b748d993354ca34
+30 verbose etag W/"201a648746cae849aba7ed9b4e0b6323"
+31 verbose lastModified Tue, 26 Oct 2021 12:41:31 GMT
+32 http request GET https://registry.npmjs.org/@wdio%2ftypes
+33 http 304 https://registry.npmjs.org/@wdio%2ftypes
+34 verbose headers { date: 'Thu, 28 Oct 2021 07:39:51 GMT',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'cf-ray': '6a528340a9c25c20-FRA',
+34 verbose headers   age: '129',
+34 verbose headers   'cache-control': 'public, max-age=300',
+34 verbose headers   etag: '"201a648746cae849aba7ed9b4e0b6323"',
+34 verbose headers   'last-modified': 'Tue, 26 Oct 2021 12:41:31 GMT',
+34 verbose headers   vary: 'Accept-Encoding',
+34 verbose headers   'cf-cache-status': 'HIT',
+34 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+34 verbose headers   'x-amz-replication-status': 'COMPLETED',
+34 verbose headers   server: 'cloudflare' }
+35 silly get cb [ 304,
+35 silly get   { date: 'Thu, 28 Oct 2021 07:39:51 GMT',
+35 silly get     connection: 'keep-alive',
+35 silly get     'cf-ray': '6a528340a9c25c20-FRA',
+35 silly get     age: '129',
+35 silly get     'cache-control': 'public, max-age=300',
+35 silly get     etag: '"201a648746cae849aba7ed9b4e0b6323"',
+35 silly get     'last-modified': 'Tue, 26 Oct 2021 12:41:31 GMT',
+35 silly get     vary: 'Accept-Encoding',
+35 silly get     'cf-cache-status': 'HIT',
+35 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+35 silly get     'x-amz-replication-status': 'COMPLETED',
+35 silly get     server: 'cloudflare' } ]
+36 verbose etag https://registry.npmjs.org/@wdio%2ftypes from cache
+37 verbose get saving @wdio/types to /home/xps-dell/.npm/registry.npmjs.org/_40wdio_252ftypes/.cache.json
+38 silly resolveWithNewModule @wdio/types@7.13.2 checking installable status
+39 silly cache add args [ '@wdio/types@7.13.2', null ]
+40 verbose cache add spec @wdio/types@7.13.2
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: '@wdio/types@7.13.2',
+41 silly cache add   scope: '@wdio',
+41 silly cache add   name: '@wdio/types',
+41 silly cache add   rawSpec: '7.13.2',
+41 silly cache add   spec: '7.13.2',
+41 silly cache add   type: 'version' }
+42 silly addNamed @wdio/types@7.13.2
+43 verbose addNamed "7.13.2" is a plain semver version for @wdio/types
+44 silly mapToRegistry name @wdio/types
+45 silly mapToRegistry scope (from package name) @wdio
+46 verbose mapToRegistry no registry URL found in name for scope @wdio
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+50 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+51 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+52 silly mapToRegistry name @wdio/types
+53 silly mapToRegistry scope (from package name) @wdio
+54 verbose mapToRegistry no registry URL found in name for scope @wdio
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+58 verbose addRemoteTarball https://registry.npmjs.org/@wdio/types/-/types-7.13.2.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/@wdio/types/-/types-7.13.2.tgz',
+59 verbose addRemoteTarball   '7ad775145f3af26225349838ac893ef09008f701' ]
+60 info retry fetch attempt 1 at 10:39:51
+61 info attempt registry request try #1 at 10:39:51
+62 http fetch GET https://registry.npmjs.org/@wdio/types/-/types-7.13.2.tgz
+63 http fetch 200 https://registry.npmjs.org/@wdio/types/-/types-7.13.2.tgz
+64 silly fetchAndShaCheck shasum 7ad775145f3af26225349838ac893ef09008f701
+65 verbose addTmpTarball /tmp/npm-5772-a246b50f/registry.npmjs.org/_40wdio/types/-/types-7.13.2.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for @wdio/types@7.13.2
+67 silly cache afterAdd @wdio/types@7.13.2
+68 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.13.2/package/package.json not in flight; writing
+69 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.13.2/package/package.json written
+70 silly fetchNamedPackageData @wdio/types
+71 silly mapToRegistry name @wdio/types
+72 silly mapToRegistry scope (from package name) @wdio
+73 verbose mapToRegistry no registry URL found in name for scope @wdio
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+77 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+78 silly cache add args [ '@wdio/types@7.14.1', null ]
+79 verbose cache add spec @wdio/types@7.14.1
+80 silly cache add parsed spec Result {
+80 silly cache add   raw: '@wdio/types@7.14.1',
+80 silly cache add   scope: '@wdio',
+80 silly cache add   name: '@wdio/types',
+80 silly cache add   rawSpec: '7.14.1',
+80 silly cache add   spec: '7.14.1',
+80 silly cache add   type: 'version' }
+81 silly addNamed @wdio/types@7.14.1
+82 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+83 silly mapToRegistry name @wdio/types
+84 silly mapToRegistry scope (from package name) @wdio
+85 verbose mapToRegistry no registry URL found in name for scope @wdio
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+89 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+90 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+91 silly mapToRegistry name @wdio/types
+92 silly mapToRegistry scope (from package name) @wdio
+93 verbose mapToRegistry no registry URL found in name for scope @wdio
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+97 verbose addRemoteTarball https://registry.npmjs.org/@wdio/types/-/types-7.14.1.tgz not in flight; adding
+98 verbose addRemoteTarball [ 'https://registry.npmjs.org/@wdio/types/-/types-7.14.1.tgz',
+98 verbose addRemoteTarball   '967e0f81f47addd1fc94b35f556877b738bceb4c' ]
+99 info retry fetch attempt 1 at 10:39:52
+100 info attempt registry request try #1 at 10:39:52
+101 http fetch GET https://registry.npmjs.org/@wdio/types/-/types-7.14.1.tgz
+102 http fetch 200 https://registry.npmjs.org/@wdio/types/-/types-7.14.1.tgz
+103 silly fetchAndShaCheck shasum 967e0f81f47addd1fc94b35f556877b738bceb4c
+104 verbose addTmpTarball /tmp/npm-5772-a246b50f/registry.npmjs.org/_40wdio/types/-/types-7.14.1.tgz not in flight; adding
+105 verbose addTmpTarball already have metadata; skipping unpack for @wdio/types@7.14.1
+106 silly cache afterAdd @wdio/types@7.14.1
+107 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+108 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+109 silly fetchNamedPackageData @wdio/types
+110 silly mapToRegistry name @wdio/types
+111 silly mapToRegistry scope (from package name) @wdio
+112 verbose mapToRegistry no registry URL found in name for scope @wdio
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+116 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+117 silly cache add args [ '@wdio/types@7.14.1', null ]
+118 verbose cache add spec @wdio/types@7.14.1
+119 silly cache add parsed spec Result {
+119 silly cache add   raw: '@wdio/types@7.14.1',
+119 silly cache add   scope: '@wdio',
+119 silly cache add   name: '@wdio/types',
+119 silly cache add   rawSpec: '7.14.1',
+119 silly cache add   spec: '7.14.1',
+119 silly cache add   type: 'version' }
+120 silly addNamed @wdio/types@7.14.1
+121 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+122 silly mapToRegistry name @wdio/types
+123 silly mapToRegistry scope (from package name) @wdio
+124 verbose mapToRegistry no registry URL found in name for scope @wdio
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+128 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+129 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+130 silly cache afterAdd @wdio/types@7.14.1
+131 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+132 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+133 silly fetchNamedPackageData @types/node
+134 silly mapToRegistry name @types/node
+135 silly mapToRegistry scope (from package name) @types
+136 verbose mapToRegistry no registry URL found in name for scope @types
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+140 verbose request uri https://registry.npmjs.org/@types%2fnode
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 10:39:52
+143 verbose etag W/"e7c3d8085054a4a627b4269aca1bc9b3"
+144 verbose lastModified Mon, 25 Oct 2021 23:34:31 GMT
+145 http request GET https://registry.npmjs.org/@types%2fnode
+146 http 304 https://registry.npmjs.org/@types%2fnode
+147 verbose headers { date: 'Thu, 28 Oct 2021 07:39:52 GMT',
+147 verbose headers   connection: 'keep-alive',
+147 verbose headers   'cf-ray': '6a52834358b65c20-FRA',
+147 verbose headers   age: '19',
+147 verbose headers   'cache-control': 'public, max-age=300',
+147 verbose headers   etag: '"e7c3d8085054a4a627b4269aca1bc9b3"',
+147 verbose headers   'last-modified': 'Mon, 25 Oct 2021 23:34:31 GMT',
+147 verbose headers   vary: 'Accept-Encoding',
+147 verbose headers   'cf-cache-status': 'HIT',
+147 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+147 verbose headers   'x-amz-replication-status': 'PENDING',
+147 verbose headers   server: 'cloudflare' }
+148 silly get cb [ 304,
+148 silly get   { date: 'Thu, 28 Oct 2021 07:39:52 GMT',
+148 silly get     connection: 'keep-alive',
+148 silly get     'cf-ray': '6a52834358b65c20-FRA',
+148 silly get     age: '19',
+148 silly get     'cache-control': 'public, max-age=300',
+148 silly get     etag: '"e7c3d8085054a4a627b4269aca1bc9b3"',
+148 silly get     'last-modified': 'Mon, 25 Oct 2021 23:34:31 GMT',
+148 silly get     vary: 'Accept-Encoding',
+148 silly get     'cf-cache-status': 'HIT',
+148 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+148 silly get     'x-amz-replication-status': 'PENDING',
+148 silly get     server: 'cloudflare' } ]
+149 verbose etag https://registry.npmjs.org/@types%2fnode from cache
+150 verbose get saving @types/node to /home/xps-dell/.npm/registry.npmjs.org/_40types_252fnode/.cache.json
+151 silly resolveWithNewModule @types/node@15.14.9 checking installable status
+152 silly cache add args [ '@types/node@^15.12.5', null ]
+153 verbose cache add spec @types/node@^15.12.5
+154 silly cache add parsed spec Result {
+154 silly cache add   raw: '@types/node@^15.12.5',
+154 silly cache add   scope: '@types',
+154 silly cache add   name: '@types/node',
+154 silly cache add   rawSpec: '^15.12.5',
+154 silly cache add   spec: '>=15.12.5 <16.0.0',
+154 silly cache add   type: 'range' }
+155 silly addNamed @types/node@>=15.12.5 <16.0.0
+156 verbose addNamed ">=15.12.5 <16.0.0" is a valid semver range for @types/node
+157 silly addNameRange { name: '@types/node',
+157 silly addNameRange   range: '>=15.12.5 <16.0.0',
+157 silly addNameRange   hasData: false }
+158 silly mapToRegistry name @types/node
+159 silly mapToRegistry scope (from package name) @types
+160 verbose mapToRegistry no registry URL found in name for scope @types
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+164 verbose addNameRange registry:https://registry.npmjs.org/@types%2fnode not in flight; fetching
+165 verbose get https://registry.npmjs.org/@types%2fnode not expired, no request
+166 silly addNameRange number 2 { name: '@types/node',
+166 silly addNameRange   range: '>=15.12.5 <16.0.0',
+166 silly addNameRange   hasData: true }
+167 silly addNameRange versions [ '@types/node',
+167 silly addNameRange   [ '4.0.15-alpha',
+167 silly addNameRange     '4.0.16-alpha',
+167 silly addNameRange     '4.0.21-alpha',
+167 silly addNameRange     '4.0.22-alpha',
+167 silly addNameRange     '4.0.23-alpha',
+167 silly addNameRange     '4.0.24-alpha',
+167 silly addNameRange     '4.0.25-alpha',
+167 silly addNameRange     '4.0.26-alpha',
+167 silly addNameRange     '4.0.27-alpha',
+167 silly addNameRange     '4.0.28-alpha',
+167 silly addNameRange     '4.0.29',
+167 silly addNameRange     '4.0.30',
+167 silly addNameRange     '6.0.31',
+167 silly addNameRange     '6.0.32',
+167 silly addNameRange     '6.0.33',
+167 silly addNameRange     '6.0.34',
+167 silly addNameRange     '6.0.35',
+167 silly addNameRange     '6.0.36',
+167 silly addNameRange     '6.0.37',
+167 silly addNameRange     '6.0.38',
+167 silly addNameRange     '6.0.39',
+167 silly addNameRange     '6.0.40',
+167 silly addNameRange     '6.0.41',
+167 silly addNameRange     '6.0.42',
+167 silly addNameRange     '6.0.43',
+167 silly addNameRange     '6.0.44',
+167 silly addNameRange     '6.0.45',
+167 silly addNameRange     '6.0.46',
+167 silly addNameRange     '6.0.47',
+167 silly addNameRange     '6.0.48',
+167 silly addNameRange     '6.0.49',
+167 silly addNameRange     '6.0.50',
+167 silly addNameRange     '6.0.51',
+167 silly addNameRange     '0.0.0',
+167 silly addNameRange     '0.0.1',
+167 silly addNameRange     '0.0.2',
+167 silly addNameRange     '0.0.3',
+167 silly addNameRange     '6.0.52',
+167 silly addNameRange     '6.0.53',
+167 silly addNameRange     '6.0.54',
+167 silly addNameRange     '6.0.55',
+167 silly addNameRange     '6.0.56',
+167 silly addNameRange     '6.0.57',
+167 silly addNameRange     '6.0.58',
+167 silly addNameRange     '6.0.59',
+167 silly addNameRange     '4.2.0',
+167 silly addNameRange     '0.12.0',
+167 silly addNameRange     '7.0.0',
+167 silly addNameRange     '6.0.60',
+167 silly addNameRange     '7.0.1',
+167 silly addNameRange     '6.0.61',
+167 silly addNameRange     '7.0.2',
+167 silly addNameRange     '7.0.3',
+167 silly addNameRange     '7.0.4',
+167 silly addNameRange     '4.2.1',
+167 silly addNameRange     '6.0.62',
+167 silly addNameRange     '7.0.5',
+167 silly addNameRange     '6.0.63',
+167 silly addNameRange     '4.2.2',
+167 silly addNameRange     '0.12.1',
+167 silly addNameRange     '4.2.3',
+167 silly addNameRange     '6.0.64',
+167 silly addNameRange     '7.0.6',
+167 silly addNameRange     '6.0.65',
+167 silly addNameRange     '7.0.7',
+167 silly addNameRange     '7.0.8',
+167 silly addNameRange     '4.2.4',
+167 silly addNameRange     '0.12.2',
+167 silly addNameRange     '6.0.66',
+167 silly addNameRange     '7.0.9',
+167 silly addNameRange     '7.0.10',
+167 silly addNameRange     '7.0.11',
+167 silly addNameRange     '6.0.67',
+167 silly addNameRange     '6.0.68',
+167 silly addNameRange     '7.0.12',
+167 silly addNameRange     '4.2.5',
+167 silly addNameRange     '0.12.3',
+167 silly addNameRange     '6.0.69',
+167 silly addNameRange     '0.12.4',
+167 silly addNameRange     '4.2.6',
+167 silly addNameRange     '6.0.70',
+167 silly addNameRange     '7.0.13',
+167 silly addNameRange     '7.0.14',
+167 silly addNameRange     '6.0.71',
+167 silly addNameRange     '7.0.15',
+167 silly addNameRange     '4.2.7',
+167 silly addNameRange     '6.0.72',
+167 silly addNameRange     '7.0.16',
+167 silly addNameRange     '7.0.17',
+167 silly addNameRange     '7.0.18',
+167 silly addNameRange     '4.2.8',
+167 silly addNameRange     '6.0.73',
+167 silly addNameRange     '7.0.19',
+167 silly addNameRange     '7.0.20',
+167 silly addNameRange     '7.0.21',
+167 silly addNameRange     '7.0.22',
+167 silly addNameRange     '6.0.74',
+167 silly addNameRange     '7.0.23',
+167 silly addNameRange     '7.0.24',
+167 silly addNameRange     '6.0.75',
+167 silly addNameRange     ... 1139 more items ] ]
+168 silly addNamed @types/node@15.14.9
+169 verbose addNamed "15.14.9" is a plain semver version for @types/node
+170 silly mapToRegistry name @types/node
+171 silly mapToRegistry scope (from package name) @types
+172 verbose mapToRegistry no registry URL found in name for scope @types
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+176 verbose addRemoteTarball https://registry.npmjs.org/@types/node/-/node-15.14.9.tgz not in flight; adding
+177 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/node/-/node-15.14.9.tgz',
+177 verbose addRemoteTarball   'bc43c990c3c9be7281868bbc7b8fdd6e2b57adfa' ]
+178 info retry fetch attempt 1 at 10:39:52
+179 info attempt registry request try #1 at 10:39:52
+180 http fetch GET https://registry.npmjs.org/@types/node/-/node-15.14.9.tgz
+181 http fetch 200 https://registry.npmjs.org/@types/node/-/node-15.14.9.tgz
+182 silly fetchAndShaCheck shasum bc43c990c3c9be7281868bbc7b8fdd6e2b57adfa
+183 verbose addTmpTarball /tmp/npm-5772-a246b50f/registry.npmjs.org/_40types/node/-/node-15.14.9.tgz not in flight; adding
+184 verbose addTmpTarball already have metadata; skipping unpack for @types/node@15.14.9
+185 silly cache afterAdd @types/node@15.14.9
+186 verbose afterAdd /home/xps-dell/.npm/@types/node/15.14.9/package/package.json not in flight; writing
+187 verbose afterAdd /home/xps-dell/.npm/@types/node/15.14.9/package/package.json written
+188 silly fetchNamedPackageData @wdio/types
+189 silly mapToRegistry name @wdio/types
+190 silly mapToRegistry scope (from package name) @wdio
+191 verbose mapToRegistry no registry URL found in name for scope @wdio
+192 silly mapToRegistry using default registry
+193 silly mapToRegistry registry https://registry.npmjs.org/
+194 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+195 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+196 silly cache add args [ '@wdio/types@7.14.1', null ]
+197 verbose cache add spec @wdio/types@7.14.1
+198 silly cache add parsed spec Result {
+198 silly cache add   raw: '@wdio/types@7.14.1',
+198 silly cache add   scope: '@wdio',
+198 silly cache add   name: '@wdio/types',
+198 silly cache add   rawSpec: '7.14.1',
+198 silly cache add   spec: '7.14.1',
+198 silly cache add   type: 'version' }
+199 silly addNamed @wdio/types@7.14.1
+200 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+201 silly mapToRegistry name @wdio/types
+202 silly mapToRegistry scope (from package name) @wdio
+203 verbose mapToRegistry no registry URL found in name for scope @wdio
+204 silly mapToRegistry using default registry
+205 silly mapToRegistry registry https://registry.npmjs.org/
+206 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+207 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+208 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+209 silly cache afterAdd @wdio/types@7.14.1
+210 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+211 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+212 silly fetchNamedPackageData @types/node
+213 silly mapToRegistry name @types/node
+214 silly mapToRegistry scope (from package name) @types
+215 verbose mapToRegistry no registry URL found in name for scope @types
+216 silly mapToRegistry using default registry
+217 silly mapToRegistry registry https://registry.npmjs.org/
+218 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+219 silly fetchNamedPackageData fsevents
+220 silly mapToRegistry name fsevents
+221 silly mapToRegistry using default registry
+222 silly mapToRegistry registry https://registry.npmjs.org/
+223 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+224 verbose request uri https://registry.npmjs.org/fsevents
+225 verbose request no auth needed
+226 info attempt registry request try #1 at 10:39:56
+227 http request GET https://registry.npmjs.org/fsevents
+228 http 200 https://registry.npmjs.org/fsevents
+229 verbose headers { date: 'Thu, 28 Oct 2021 07:39:56 GMT',
+229 verbose headers   'content-type': 'application/json',
+229 verbose headers   'transfer-encoding': 'chunked',
+229 verbose headers   connection: 'keep-alive',
+229 verbose headers   'cf-ray': '6a52835d3eaa5c20-FRA',
+229 verbose headers   age: '37',
+229 verbose headers   'cache-control': 'public, max-age=300',
+229 verbose headers   etag: 'W/"897b89cb36d39b1e4f3706e4aaceba9b"',
+229 verbose headers   'last-modified': 'Fri, 05 Feb 2021 14:46:37 GMT',
+229 verbose headers   vary: 'accept-encoding, accept',
+229 verbose headers   'cf-cache-status': 'HIT',
+229 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+229 verbose headers   server: 'cloudflare',
+229 verbose headers   'content-encoding': 'gzip' }
+230 silly get cb [ 200,
+230 silly get   { date: 'Thu, 28 Oct 2021 07:39:56 GMT',
+230 silly get     'content-type': 'application/json',
+230 silly get     'transfer-encoding': 'chunked',
+230 silly get     connection: 'keep-alive',
+230 silly get     'cf-ray': '6a52835d3eaa5c20-FRA',
+230 silly get     age: '37',
+230 silly get     'cache-control': 'public, max-age=300',
+230 silly get     etag: 'W/"897b89cb36d39b1e4f3706e4aaceba9b"',
+230 silly get     'last-modified': 'Fri, 05 Feb 2021 14:46:37 GMT',
+230 silly get     vary: 'accept-encoding, accept',
+230 silly get     'cf-cache-status': 'HIT',
+230 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+230 silly get     server: 'cloudflare',
+230 silly get     'content-encoding': 'gzip' } ]
+231 verbose get saving fsevents to /home/xps-dell/.npm/registry.npmjs.org/fsevents/.cache.json
+232 silly resolveWithNewModule fsevents@2.3.2 checking installable status
+233 silly fetchNamedPackageData @wdio/types
+234 silly mapToRegistry name @wdio/types
+235 silly mapToRegistry scope (from package name) @wdio
+236 verbose mapToRegistry no registry URL found in name for scope @wdio
+237 silly mapToRegistry using default registry
+238 silly mapToRegistry registry https://registry.npmjs.org/
+239 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+240 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+241 silly cache add args [ '@wdio/types@7.14.1', null ]
+242 verbose cache add spec @wdio/types@7.14.1
+243 silly cache add parsed spec Result {
+243 silly cache add   raw: '@wdio/types@7.14.1',
+243 silly cache add   scope: '@wdio',
+243 silly cache add   name: '@wdio/types',
+243 silly cache add   rawSpec: '7.14.1',
+243 silly cache add   spec: '7.14.1',
+243 silly cache add   type: 'version' }
+244 silly addNamed @wdio/types@7.14.1
+245 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+246 silly mapToRegistry name @wdio/types
+247 silly mapToRegistry scope (from package name) @wdio
+248 verbose mapToRegistry no registry URL found in name for scope @wdio
+249 silly mapToRegistry using default registry
+250 silly mapToRegistry registry https://registry.npmjs.org/
+251 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+252 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+253 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+254 silly cache afterAdd @wdio/types@7.14.1
+255 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+256 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+257 silly fetchNamedPackageData @wdio/types
+258 silly mapToRegistry name @wdio/types
+259 silly mapToRegistry scope (from package name) @wdio
+260 verbose mapToRegistry no registry URL found in name for scope @wdio
+261 silly mapToRegistry using default registry
+262 silly mapToRegistry registry https://registry.npmjs.org/
+263 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+264 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+265 silly cache add args [ '@wdio/types@7.14.1', null ]
+266 verbose cache add spec @wdio/types@7.14.1
+267 silly cache add parsed spec Result {
+267 silly cache add   raw: '@wdio/types@7.14.1',
+267 silly cache add   scope: '@wdio',
+267 silly cache add   name: '@wdio/types',
+267 silly cache add   rawSpec: '7.14.1',
+267 silly cache add   spec: '7.14.1',
+267 silly cache add   type: 'version' }
+268 silly addNamed @wdio/types@7.14.1
+269 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+270 silly mapToRegistry name @wdio/types
+271 silly mapToRegistry scope (from package name) @wdio
+272 verbose mapToRegistry no registry URL found in name for scope @wdio
+273 silly mapToRegistry using default registry
+274 silly mapToRegistry registry https://registry.npmjs.org/
+275 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+276 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+277 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+278 silly cache afterAdd @wdio/types@7.14.1
+279 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+280 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+281 silly fetchNamedPackageData @wdio/types
+282 silly mapToRegistry name @wdio/types
+283 silly mapToRegistry scope (from package name) @wdio
+284 verbose mapToRegistry no registry URL found in name for scope @wdio
+285 silly mapToRegistry using default registry
+286 silly mapToRegistry registry https://registry.npmjs.org/
+287 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+288 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+289 silly cache add args [ '@wdio/types@7.14.1', null ]
+290 verbose cache add spec @wdio/types@7.14.1
+291 silly cache add parsed spec Result {
+291 silly cache add   raw: '@wdio/types@7.14.1',
+291 silly cache add   scope: '@wdio',
+291 silly cache add   name: '@wdio/types',
+291 silly cache add   rawSpec: '7.14.1',
+291 silly cache add   spec: '7.14.1',
+291 silly cache add   type: 'version' }
+292 silly addNamed @wdio/types@7.14.1
+293 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+294 silly mapToRegistry name @wdio/types
+295 silly mapToRegistry scope (from package name) @wdio
+296 verbose mapToRegistry no registry URL found in name for scope @wdio
+297 silly mapToRegistry using default registry
+298 silly mapToRegistry registry https://registry.npmjs.org/
+299 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+300 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+301 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+302 silly cache afterAdd @wdio/types@7.14.1
+303 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+304 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+305 silly fetchNamedPackageData @types/node
+306 silly mapToRegistry name @types/node
+307 silly mapToRegistry scope (from package name) @types
+308 verbose mapToRegistry no registry URL found in name for scope @types
+309 silly mapToRegistry using default registry
+310 silly mapToRegistry registry https://registry.npmjs.org/
+311 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+312 silly fetchNamedPackageData @wdio/types
+313 silly mapToRegistry name @wdio/types
+314 silly mapToRegistry scope (from package name) @wdio
+315 verbose mapToRegistry no registry URL found in name for scope @wdio
+316 silly mapToRegistry using default registry
+317 silly mapToRegistry registry https://registry.npmjs.org/
+318 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+319 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+320 silly cache add args [ '@wdio/types@7.14.1', null ]
+321 verbose cache add spec @wdio/types@7.14.1
+322 silly cache add parsed spec Result {
+322 silly cache add   raw: '@wdio/types@7.14.1',
+322 silly cache add   scope: '@wdio',
+322 silly cache add   name: '@wdio/types',
+322 silly cache add   rawSpec: '7.14.1',
+322 silly cache add   spec: '7.14.1',
+322 silly cache add   type: 'version' }
+323 silly addNamed @wdio/types@7.14.1
+324 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+325 silly mapToRegistry name @wdio/types
+326 silly mapToRegistry scope (from package name) @wdio
+327 verbose mapToRegistry no registry URL found in name for scope @wdio
+328 silly mapToRegistry using default registry
+329 silly mapToRegistry registry https://registry.npmjs.org/
+330 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+331 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+332 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+333 silly cache afterAdd @wdio/types@7.14.1
+334 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+335 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+336 silly fetchNamedPackageData @wdio/types
+337 silly mapToRegistry name @wdio/types
+338 silly mapToRegistry scope (from package name) @wdio
+339 verbose mapToRegistry no registry URL found in name for scope @wdio
+340 silly mapToRegistry using default registry
+341 silly mapToRegistry registry https://registry.npmjs.org/
+342 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+343 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+344 silly cache add args [ '@wdio/types@7.14.1', null ]
+345 verbose cache add spec @wdio/types@7.14.1
+346 silly cache add parsed spec Result {
+346 silly cache add   raw: '@wdio/types@7.14.1',
+346 silly cache add   scope: '@wdio',
+346 silly cache add   name: '@wdio/types',
+346 silly cache add   rawSpec: '7.14.1',
+346 silly cache add   spec: '7.14.1',
+346 silly cache add   type: 'version' }
+347 silly addNamed @wdio/types@7.14.1
+348 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+349 silly mapToRegistry name @wdio/types
+350 silly mapToRegistry scope (from package name) @wdio
+351 verbose mapToRegistry no registry URL found in name for scope @wdio
+352 silly mapToRegistry using default registry
+353 silly mapToRegistry registry https://registry.npmjs.org/
+354 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+355 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+356 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+357 silly cache afterAdd @wdio/types@7.14.1
+358 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+359 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+360 silly fetchNamedPackageData @types/node
+361 silly mapToRegistry name @types/node
+362 silly mapToRegistry scope (from package name) @types
+363 verbose mapToRegistry no registry URL found in name for scope @types
+364 silly mapToRegistry using default registry
+365 silly mapToRegistry registry https://registry.npmjs.org/
+366 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+367 silly fetchNamedPackageData @types/node
+368 silly mapToRegistry name @types/node
+369 silly mapToRegistry scope (from package name) @types
+370 verbose mapToRegistry no registry URL found in name for scope @types
+371 silly mapToRegistry using default registry
+372 silly mapToRegistry registry https://registry.npmjs.org/
+373 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+374 silly fetchNamedPackageData @wdio/types
+375 silly mapToRegistry name @wdio/types
+376 silly mapToRegistry scope (from package name) @wdio
+377 verbose mapToRegistry no registry URL found in name for scope @wdio
+378 silly mapToRegistry using default registry
+379 silly mapToRegistry registry https://registry.npmjs.org/
+380 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+381 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+382 silly cache add args [ '@wdio/types@7.14.1', null ]
+383 verbose cache add spec @wdio/types@7.14.1
+384 silly cache add parsed spec Result {
+384 silly cache add   raw: '@wdio/types@7.14.1',
+384 silly cache add   scope: '@wdio',
+384 silly cache add   name: '@wdio/types',
+384 silly cache add   rawSpec: '7.14.1',
+384 silly cache add   spec: '7.14.1',
+384 silly cache add   type: 'version' }
+385 silly addNamed @wdio/types@7.14.1
+386 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+387 silly mapToRegistry name @wdio/types
+388 silly mapToRegistry scope (from package name) @wdio
+389 verbose mapToRegistry no registry URL found in name for scope @wdio
+390 silly mapToRegistry using default registry
+391 silly mapToRegistry registry https://registry.npmjs.org/
+392 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+393 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+394 verbose request uri https://registry.npmjs.org/@wdio%2ftypes
+395 verbose request no auth needed
+396 info attempt registry request try #1 at 10:40:08
+397 verbose etag W/"201a648746cae849aba7ed9b4e0b6323"
+398 verbose lastModified Tue, 26 Oct 2021 12:41:31 GMT
+399 http request GET https://registry.npmjs.org/@wdio%2ftypes
+400 http 304 https://registry.npmjs.org/@wdio%2ftypes
+401 verbose headers { date: 'Thu, 28 Oct 2021 07:40:08 GMT',
+401 verbose headers   connection: 'keep-alive',
+401 verbose headers   'cf-ray': '6a5283a94d695c20-FRA',
+401 verbose headers   age: '146',
+401 verbose headers   'cache-control': 'public, max-age=300',
+401 verbose headers   etag: '"201a648746cae849aba7ed9b4e0b6323"',
+401 verbose headers   'last-modified': 'Tue, 26 Oct 2021 12:41:31 GMT',
+401 verbose headers   vary: 'Accept-Encoding',
+401 verbose headers   'cf-cache-status': 'HIT',
+401 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+401 verbose headers   'x-amz-replication-status': 'COMPLETED',
+401 verbose headers   server: 'cloudflare' }
+402 silly get cb [ 304,
+402 silly get   { date: 'Thu, 28 Oct 2021 07:40:08 GMT',
+402 silly get     connection: 'keep-alive',
+402 silly get     'cf-ray': '6a5283a94d695c20-FRA',
+402 silly get     age: '146',
+402 silly get     'cache-control': 'public, max-age=300',
+402 silly get     etag: '"201a648746cae849aba7ed9b4e0b6323"',
+402 silly get     'last-modified': 'Tue, 26 Oct 2021 12:41:31 GMT',
+402 silly get     vary: 'Accept-Encoding',
+402 silly get     'cf-cache-status': 'HIT',
+402 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+402 silly get     'x-amz-replication-status': 'COMPLETED',
+402 silly get     server: 'cloudflare' } ]
+403 verbose etag https://registry.npmjs.org/@wdio%2ftypes from cache
+404 verbose get saving @wdio/types to /home/xps-dell/.npm/registry.npmjs.org/_40wdio_252ftypes/.cache.json
+405 silly cache afterAdd @wdio/types@7.14.1
+406 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+407 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+408 silly fetchNamedPackageData @types/node
+409 silly mapToRegistry name @types/node
+410 silly mapToRegistry scope (from package name) @types
+411 verbose mapToRegistry no registry URL found in name for scope @types
+412 silly mapToRegistry using default registry
+413 silly mapToRegistry registry https://registry.npmjs.org/
+414 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+415 silly fetchNamedPackageData @wdio/types
+416 silly mapToRegistry name @wdio/types
+417 silly mapToRegistry scope (from package name) @wdio
+418 verbose mapToRegistry no registry URL found in name for scope @wdio
+419 silly mapToRegistry using default registry
+420 silly mapToRegistry registry https://registry.npmjs.org/
+421 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+422 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+423 silly cache add args [ '@wdio/types@7.14.1', null ]
+424 verbose cache add spec @wdio/types@7.14.1
+425 silly cache add parsed spec Result {
+425 silly cache add   raw: '@wdio/types@7.14.1',
+425 silly cache add   scope: '@wdio',
+425 silly cache add   name: '@wdio/types',
+425 silly cache add   rawSpec: '7.14.1',
+425 silly cache add   spec: '7.14.1',
+425 silly cache add   type: 'version' }
+426 silly addNamed @wdio/types@7.14.1
+427 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+428 silly mapToRegistry name @wdio/types
+429 silly mapToRegistry scope (from package name) @wdio
+430 verbose mapToRegistry no registry URL found in name for scope @wdio
+431 silly mapToRegistry using default registry
+432 silly mapToRegistry registry https://registry.npmjs.org/
+433 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+434 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+435 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+436 silly cache afterAdd @wdio/types@7.14.1
+437 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+438 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+439 silly fetchNamedPackageData @wdio/types
+440 silly mapToRegistry name @wdio/types
+441 silly mapToRegistry scope (from package name) @wdio
+442 verbose mapToRegistry no registry URL found in name for scope @wdio
+443 silly mapToRegistry using default registry
+444 silly mapToRegistry registry https://registry.npmjs.org/
+445 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+446 silly resolveWithNewModule @wdio/types@7.14.1 checking installable status
+447 silly cache add args [ '@wdio/types@7.14.1', null ]
+448 verbose cache add spec @wdio/types@7.14.1
+449 silly cache add parsed spec Result {
+449 silly cache add   raw: '@wdio/types@7.14.1',
+449 silly cache add   scope: '@wdio',
+449 silly cache add   name: '@wdio/types',
+449 silly cache add   rawSpec: '7.14.1',
+449 silly cache add   spec: '7.14.1',
+449 silly cache add   type: 'version' }
+450 silly addNamed @wdio/types@7.14.1
+451 verbose addNamed "7.14.1" is a plain semver version for @wdio/types
+452 silly mapToRegistry name @wdio/types
+453 silly mapToRegistry scope (from package name) @wdio
+454 verbose mapToRegistry no registry URL found in name for scope @wdio
+455 silly mapToRegistry using default registry
+456 silly mapToRegistry registry https://registry.npmjs.org/
+457 silly mapToRegistry uri https://registry.npmjs.org/@wdio%2ftypes
+458 verbose addNameVersion registry:https://registry.npmjs.org/@wdio%2ftypes not in flight; fetching
+459 verbose get https://registry.npmjs.org/@wdio%2ftypes not expired, no request
+460 silly cache afterAdd @wdio/types@7.14.1
+461 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json not in flight; writing
+462 verbose afterAdd /home/xps-dell/.npm/@wdio/types/7.14.1/package/package.json written
+463 silly fetchNamedPackageData @types/node
+464 silly mapToRegistry name @types/node
+465 silly mapToRegistry scope (from package name) @types
+466 verbose mapToRegistry no registry URL found in name for scope @types
+467 silly mapToRegistry using default registry
+468 silly mapToRegistry registry https://registry.npmjs.org/
+469 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+470 silly loadAllDepsIntoIdealTree Finishing
+471 silly idealTree:prePrune wdio-test
+471 silly idealTree:prePrune ├── @babel/code-frame@7.15.8
+471 silly idealTree:prePrune ├── @babel/helper-validator-identifier@7.15.7
+471 silly idealTree:prePrune ├─┬ @babel/highlight@7.14.5
+471 silly idealTree:prePrune │ ├── ansi-styles@3.2.1
+471 silly idealTree:prePrune │ ├── chalk@2.4.2
+471 silly idealTree:prePrune │ ├── color-convert@1.9.3
+471 silly idealTree:prePrune │ ├── color-name@1.1.3
+471 silly idealTree:prePrune │ ├── has-flag@3.0.0
+471 silly idealTree:prePrune │ └── supports-color@5.5.0
+471 silly idealTree:prePrune ├── @cspotcode/source-map-consumer@0.8.0
+471 silly idealTree:prePrune ├── @cspotcode/source-map-support@0.7.0
+471 silly idealTree:prePrune ├─┬ @jest/types@27.2.5
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @nodelib/fs.scandir@2.1.5
+471 silly idealTree:prePrune ├── @nodelib/fs.stat@2.0.5
+471 silly idealTree:prePrune ├── @nodelib/fs.walk@1.2.8
+471 silly idealTree:prePrune ├── @sindresorhus/is@4.2.0
+471 silly idealTree:prePrune ├── @szmarczak/http-timer@4.0.6
+471 silly idealTree:prePrune ├── @testim/chrome-version@1.0.7
+471 silly idealTree:prePrune ├── @tsconfig/node10@1.0.8
+471 silly idealTree:prePrune ├── @tsconfig/node12@1.0.9
+471 silly idealTree:prePrune ├── @tsconfig/node14@1.0.1
+471 silly idealTree:prePrune ├── @tsconfig/node16@1.0.2
+471 silly idealTree:prePrune ├── @types/aria-query@4.2.2
+471 silly idealTree:prePrune ├─┬ @types/cacheable-request@6.0.2
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @types/diff@5.0.1
+471 silly idealTree:prePrune ├── @types/easy-table@0.0.33
+471 silly idealTree:prePrune ├── @types/ejs@3.1.0
+471 silly idealTree:prePrune ├─┬ @types/fs-extra@9.0.13
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @types/http-cache-semantics@4.0.1
+471 silly idealTree:prePrune ├── @types/inquirer@8.1.3
+471 silly idealTree:prePrune ├── @types/istanbul-lib-coverage@2.0.3
+471 silly idealTree:prePrune ├── @types/istanbul-lib-report@3.0.0
+471 silly idealTree:prePrune ├── @types/istanbul-reports@3.0.1
+471 silly idealTree:prePrune ├─┬ @types/keyv@3.1.3
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @types/lodash.flattendeep@4.4.6
+471 silly idealTree:prePrune ├── @types/lodash.pickby@4.6.6
+471 silly idealTree:prePrune ├── @types/lodash.union@4.6.6
+471 silly idealTree:prePrune ├── @types/lodash@4.14.175
+471 silly idealTree:prePrune ├── @types/mocha@9.0.0
+471 silly idealTree:prePrune ├── @types/node@16.11.6
+471 silly idealTree:prePrune ├── @types/object-inspect@1.8.1
+471 silly idealTree:prePrune ├─┬ @types/recursive-readdir@2.2.0
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├─┬ @types/responselike@1.0.0
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @types/stack-utils@2.0.1
+471 silly idealTree:prePrune ├─┬ @types/stream-buffers@3.0.4
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @types/supports-color@8.1.1
+471 silly idealTree:prePrune ├─┬ @types/through@0.0.30
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @types/which@1.3.2
+471 silly idealTree:prePrune ├── @types/yargs-parser@20.2.1
+471 silly idealTree:prePrune ├── @types/yargs@16.0.4
+471 silly idealTree:prePrune ├─┬ @types/yauzl@2.9.2
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├── @ungap/promise-all-settled@1.1.2
+471 silly idealTree:prePrune ├─┬ @wdio/cli@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├─┬ @wdio/config@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├─┬ @wdio/local-runner@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├── @wdio/logger@7.7.0
+471 silly idealTree:prePrune ├─┬ @wdio/mocha-framework@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├── @wdio/protocols@7.13.2
+471 silly idealTree:prePrune ├── @wdio/repl@7.14.1
+471 silly idealTree:prePrune ├─┬ @wdio/reporter@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├─┬ @wdio/runner@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├─┬ @wdio/spec-reporter@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├─┬ @wdio/types@7.13.2
+471 silly idealTree:prePrune │ └── @types/node@15.14.9
+471 silly idealTree:prePrune ├─┬ @wdio/utils@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├── acorn-walk@8.2.0
+471 silly idealTree:prePrune ├── acorn@8.5.0
+471 silly idealTree:prePrune ├── agent-base@6.0.2
+471 silly idealTree:prePrune ├─┬ aggregate-error@3.1.0
+471 silly idealTree:prePrune │ └── indent-string@4.0.0
+471 silly idealTree:prePrune ├── ansi-colors@4.1.1
+471 silly idealTree:prePrune ├─┬ ansi-escapes@4.3.2
+471 silly idealTree:prePrune │ └── type-fest@0.21.3
+471 silly idealTree:prePrune ├── ansi-regex@5.0.1
+471 silly idealTree:prePrune ├── ansi-styles@4.3.0
+471 silly idealTree:prePrune ├── anymatch@3.1.2
+471 silly idealTree:prePrune ├─┬ archiver-utils@2.1.0
+471 silly idealTree:prePrune │ ├── readable-stream@2.3.7
+471 silly idealTree:prePrune │ └── string_decoder@1.1.1
+471 silly idealTree:prePrune ├─┬ archiver@5.3.0
+471 silly idealTree:prePrune │ └── async@3.2.1
+471 silly idealTree:prePrune ├── arg@4.1.3
+471 silly idealTree:prePrune ├── argparse@2.0.1
+471 silly idealTree:prePrune ├── aria-query@5.0.0
+471 silly idealTree:prePrune ├── array-union@2.1.0
+471 silly idealTree:prePrune ├── async-exit-hook@2.0.1
+471 silly idealTree:prePrune ├── async@0.9.2
+471 silly idealTree:prePrune ├── at-least-node@1.0.0
+471 silly idealTree:prePrune ├── atob@2.1.2
+471 silly idealTree:prePrune ├── axios@0.21.4
+471 silly idealTree:prePrune ├── balanced-match@1.0.2
+471 silly idealTree:prePrune ├── base64-js@1.5.1
+471 silly idealTree:prePrune ├── binary-extensions@2.2.0
+471 silly idealTree:prePrune ├── bl@4.1.0
+471 silly idealTree:prePrune ├── brace-expansion@1.1.11
+471 silly idealTree:prePrune ├── braces@3.0.2
+471 silly idealTree:prePrune ├── browser-stdout@1.3.1
+471 silly idealTree:prePrune ├── buffer-crc32@0.2.13
+471 silly idealTree:prePrune ├── buffer@5.7.1
+471 silly idealTree:prePrune ├─┬ cac@3.0.4
+471 silly idealTree:prePrune │ ├── ansi-regex@2.1.1
+471 silly idealTree:prePrune │ ├── ansi-styles@2.2.1
+471 silly idealTree:prePrune │ ├── chalk@1.1.3
+471 silly idealTree:prePrune │ ├── strip-ansi@3.0.1
+471 silly idealTree:prePrune │ └── supports-color@2.0.0
+471 silly idealTree:prePrune ├── cacheable-lookup@5.0.4
+471 silly idealTree:prePrune ├── cacheable-request@7.0.2
+471 silly idealTree:prePrune ├─┬ camelcase-keys@3.0.0
+471 silly idealTree:prePrune │ └── camelcase@3.0.0
+471 silly idealTree:prePrune ├── camelcase@6.2.0
+471 silly idealTree:prePrune ├─┬ chalk@4.1.2
+471 silly idealTree:prePrune │ └── supports-color@7.2.0
+471 silly idealTree:prePrune ├── chardet@0.7.0
+471 silly idealTree:prePrune ├── chokidar@3.5.2
+471 silly idealTree:prePrune ├── chownr@1.1.4
+471 silly idealTree:prePrune ├─┬ chrome-launcher@0.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── escape-string-regexp@4.0.0
+471 silly idealTree:prePrune ├── chromedriver@94.0.0
+471 silly idealTree:prePrune ├── clean-stack@2.2.0
+471 silly idealTree:prePrune ├── cli-cursor@3.1.0
+471 silly idealTree:prePrune ├── cli-spinners@2.6.1
+471 silly idealTree:prePrune ├── cli-width@3.0.0
+471 silly idealTree:prePrune ├── cliui@7.0.4
+471 silly idealTree:prePrune ├─┬ clone-response@1.0.2
+471 silly idealTree:prePrune │ └── mimic-response@1.0.1
+471 silly idealTree:prePrune ├── clone@1.0.4
+471 silly idealTree:prePrune ├── color-convert@2.0.1
+471 silly idealTree:prePrune ├── color-name@1.1.4
+471 silly idealTree:prePrune ├── compress-commons@4.1.1
+471 silly idealTree:prePrune ├── concat-map@0.0.1
+471 silly idealTree:prePrune ├── core-util-is@1.0.3
+471 silly idealTree:prePrune ├── crc-32@1.2.0
+471 silly idealTree:prePrune ├── crc32-stream@4.0.2
+471 silly idealTree:prePrune ├── create-require@1.1.1
+471 silly idealTree:prePrune ├─┬ cross-spawn@4.0.2
+471 silly idealTree:prePrune │ └── which@1.3.1
+471 silly idealTree:prePrune ├── css-shorthand-properties@1.1.1
+471 silly idealTree:prePrune ├── css-value@0.0.1
+471 silly idealTree:prePrune ├── debug@4.3.2
+471 silly idealTree:prePrune ├── decamelize@4.0.0
+471 silly idealTree:prePrune ├── decompress-response@6.0.0
+471 silly idealTree:prePrune ├── deep-is@0.1.4
+471 silly idealTree:prePrune ├── deepmerge@4.2.2
+471 silly idealTree:prePrune ├── defaults@1.0.3
+471 silly idealTree:prePrune ├── defer-to-connect@2.0.1
+471 silly idealTree:prePrune ├── del@6.0.0
+471 silly idealTree:prePrune ├── devtools-protocol@0.0.927104
+471 silly idealTree:prePrune ├─┬ devtools@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├── diff-sequences@27.0.6
+471 silly idealTree:prePrune ├── diff@5.0.0
+471 silly idealTree:prePrune ├── dir-glob@3.0.1
+471 silly idealTree:prePrune ├── easy-table@1.2.0
+471 silly idealTree:prePrune ├── edge-paths@2.2.1
+471 silly idealTree:prePrune ├── ejs@3.1.6
+471 silly idealTree:prePrune ├── emoji-regex@8.0.0
+471 silly idealTree:prePrune ├── end-of-stream@1.4.4
+471 silly idealTree:prePrune ├── error-ex@1.3.2
+471 silly idealTree:prePrune ├── escalade@3.1.1
+471 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+471 silly idealTree:prePrune ├── exit-on-epipe@1.0.1
+471 silly idealTree:prePrune ├── expect-webdriverio@3.1.4
+471 silly idealTree:prePrune ├─┬ expect@27.2.5
+471 silly idealTree:prePrune │ └── ansi-styles@5.2.0
+471 silly idealTree:prePrune ├── external-editor@3.1.0
+471 silly idealTree:prePrune ├── extract-zip@2.0.1
+471 silly idealTree:prePrune ├── fast-deep-equal@2.0.1
+471 silly idealTree:prePrune ├── fast-glob@3.2.7
+471 silly idealTree:prePrune ├── fastq@1.13.0
+471 silly idealTree:prePrune ├── fd-slicer@1.1.0
+471 silly idealTree:prePrune ├── figures@3.2.0
+471 silly idealTree:prePrune ├── filelist@1.0.2
+471 silly idealTree:prePrune ├── fill-range@7.0.1
+471 silly idealTree:prePrune ├── find-up@5.0.0
+471 silly idealTree:prePrune ├── flat@5.0.2
+471 silly idealTree:prePrune ├── follow-redirects@1.14.4
+471 silly idealTree:prePrune ├── fs-constants@1.0.0
+471 silly idealTree:prePrune ├── fs-extra@10.0.0
+471 silly idealTree:prePrune ├── fs.realpath@1.0.0
+471 silly idealTree:prePrune ├── function-bind@1.1.1
+471 silly idealTree:prePrune ├── gaze@1.1.3
+471 silly idealTree:prePrune ├── get-caller-file@2.0.5
+471 silly idealTree:prePrune ├── get-port@5.1.1
+471 silly idealTree:prePrune ├── get-stream@5.2.0
+471 silly idealTree:prePrune ├── glob-parent@5.1.2
+471 silly idealTree:prePrune ├── glob@7.2.0
+471 silly idealTree:prePrune ├── globby@11.0.4
+471 silly idealTree:prePrune ├─┬ globule@1.3.3
+471 silly idealTree:prePrune │ └── glob@7.1.7
+471 silly idealTree:prePrune ├── got@11.8.2
+471 silly idealTree:prePrune ├── graceful-fs@4.2.8
+471 silly idealTree:prePrune ├── grapheme-splitter@1.0.4
+471 silly idealTree:prePrune ├── growl@1.10.5
+471 silly idealTree:prePrune ├─┬ has-ansi@2.0.0
+471 silly idealTree:prePrune │ └── ansi-regex@2.1.1
+471 silly idealTree:prePrune ├── has-flag@4.0.0
+471 silly idealTree:prePrune ├── has@1.0.3
+471 silly idealTree:prePrune ├── he@1.2.0
+471 silly idealTree:prePrune ├── hosted-git-info@2.8.9
+471 silly idealTree:prePrune ├── http-cache-semantics@4.1.0
+471 silly idealTree:prePrune ├── http2-wrapper@1.0.3
+471 silly idealTree:prePrune ├── https-proxy-agent@5.0.0
+471 silly idealTree:prePrune ├── iconv-lite@0.4.24
+471 silly idealTree:prePrune ├── ieee754@1.2.1
+471 silly idealTree:prePrune ├── ignore@5.1.8
+471 silly idealTree:prePrune ├── indent-string@3.2.0
+471 silly idealTree:prePrune ├── inflight@1.0.6
+471 silly idealTree:prePrune ├── inherits@2.0.4
+471 silly idealTree:prePrune ├── inquirer@8.1.5
+471 silly idealTree:prePrune ├── ip-regex@4.3.0
+471 silly idealTree:prePrune ├── is-arrayish@0.2.1
+471 silly idealTree:prePrune ├── is-binary-path@2.1.0
+471 silly idealTree:prePrune ├── is-core-module@2.7.0
+471 silly idealTree:prePrune ├── is-docker@2.2.1
+471 silly idealTree:prePrune ├── is-extglob@2.1.1
+471 silly idealTree:prePrune ├── is-fullwidth-code-point@3.0.0
+471 silly idealTree:prePrune ├── is-glob@4.0.3
+471 silly idealTree:prePrune ├── is-interactive@1.0.0
+471 silly idealTree:prePrune ├── is-number@7.0.0
+471 silly idealTree:prePrune ├── is-path-cwd@2.2.0
+471 silly idealTree:prePrune ├── is-path-inside@3.0.3
+471 silly idealTree:prePrune ├── is-plain-obj@2.1.0
+471 silly idealTree:prePrune ├── is-unicode-supported@0.1.0
+471 silly idealTree:prePrune ├── is-url@1.2.4
+471 silly idealTree:prePrune ├── is-utf8@0.2.1
+471 silly idealTree:prePrune ├── is-wsl@2.2.0
+471 silly idealTree:prePrune ├── is2@2.0.7
+471 silly idealTree:prePrune ├── isarray@1.0.0
+471 silly idealTree:prePrune ├── isexe@2.0.0
+471 silly idealTree:prePrune ├─┬ jake@10.8.2
+471 silly idealTree:prePrune │ ├── ansi-styles@3.2.1
+471 silly idealTree:prePrune │ ├── chalk@2.4.2
+471 silly idealTree:prePrune │ ├── color-convert@1.9.3
+471 silly idealTree:prePrune │ ├── color-name@1.1.3
+471 silly idealTree:prePrune │ ├── has-flag@3.0.0
+471 silly idealTree:prePrune │ └── supports-color@5.5.0
+471 silly idealTree:prePrune ├── jest-diff@27.2.5
+471 silly idealTree:prePrune ├── jest-get-type@27.0.6
+471 silly idealTree:prePrune ├── jest-matcher-utils@27.2.5
+471 silly idealTree:prePrune ├── jest-message-util@27.2.5
+471 silly idealTree:prePrune ├── jest-regex-util@27.0.6
+471 silly idealTree:prePrune ├── js-tokens@4.0.0
+471 silly idealTree:prePrune ├── js-yaml@4.1.0
+471 silly idealTree:prePrune ├── json-buffer@3.0.1
+471 silly idealTree:prePrune ├── jsonfile@6.1.0
+471 silly idealTree:prePrune ├── keyv@4.0.3
+471 silly idealTree:prePrune ├── ky@0.28.5
+471 silly idealTree:prePrune ├─┬ lazystream@1.0.0
+471 silly idealTree:prePrune │ ├── readable-stream@2.3.7
+471 silly idealTree:prePrune │ └── string_decoder@1.1.1
+471 silly idealTree:prePrune ├─┬ lighthouse-logger@1.3.0
+471 silly idealTree:prePrune │ ├── debug@2.6.9
+471 silly idealTree:prePrune │ └── ms@2.0.0
+471 silly idealTree:prePrune ├── load-json-file@1.1.0
+471 silly idealTree:prePrune ├── locate-path@6.0.0
+471 silly idealTree:prePrune ├── lodash.clonedeep@4.5.0
+471 silly idealTree:prePrune ├── lodash.defaults@4.2.0
+471 silly idealTree:prePrune ├── lodash.difference@4.5.0
+471 silly idealTree:prePrune ├── lodash.flatten@4.4.0
+471 silly idealTree:prePrune ├── lodash.flattendeep@4.4.0
+471 silly idealTree:prePrune ├── lodash.isobject@3.0.2
+471 silly idealTree:prePrune ├── lodash.isplainobject@4.0.6
+471 silly idealTree:prePrune ├── lodash.merge@4.6.2
+471 silly idealTree:prePrune ├── lodash.pickby@4.6.0
+471 silly idealTree:prePrune ├── lodash.union@4.6.0
+471 silly idealTree:prePrune ├── lodash.zip@4.2.0
+471 silly idealTree:prePrune ├── lodash@4.17.21
+471 silly idealTree:prePrune ├── log-symbols@4.1.0
+471 silly idealTree:prePrune ├── loglevel-plugin-prefix@0.8.4
+471 silly idealTree:prePrune ├── loglevel@1.7.1
+471 silly idealTree:prePrune ├── lowercase-keys@2.0.0
+471 silly idealTree:prePrune ├── lru-cache@4.1.5
+471 silly idealTree:prePrune ├── make-error@1.3.6
+471 silly idealTree:prePrune ├── map-obj@1.0.1
+471 silly idealTree:prePrune ├── marky@1.2.2
+471 silly idealTree:prePrune ├── merge2@1.4.1
+471 silly idealTree:prePrune ├── micromatch@4.0.4
+471 silly idealTree:prePrune ├── mimic-fn@2.1.0
+471 silly idealTree:prePrune ├── mimic-response@3.1.0
+471 silly idealTree:prePrune ├── minimatch@3.0.4
+471 silly idealTree:prePrune ├── minimist@1.2.5
+471 silly idealTree:prePrune ├── mkdirp@1.0.4
+471 silly idealTree:prePrune ├─┬ mocha@9.1.2
+471 silly idealTree:prePrune │ ├── escape-string-regexp@4.0.0
+471 silly idealTree:prePrune │ ├── glob@7.1.7
+471 silly idealTree:prePrune │ ├── ms@2.1.3
+471 silly idealTree:prePrune │ ├── yargs-parser@20.2.4
+471 silly idealTree:prePrune │ └─┬ yargs@16.2.0
+471 silly idealTree:prePrune │   └── yargs-parser@20.2.9
+471 silly idealTree:prePrune ├── ms@2.1.2
+471 silly idealTree:prePrune ├── mute-stream@0.0.8
+471 silly idealTree:prePrune ├── nanoid@3.1.25
+471 silly idealTree:prePrune ├── node-fetch@2.6.1
+471 silly idealTree:prePrune ├── normalize-package-data@2.5.0
+471 silly idealTree:prePrune ├── normalize-path@3.0.0
+471 silly idealTree:prePrune ├── normalize-url@6.1.0
+471 silly idealTree:prePrune ├── object-inspect@1.11.0
+471 silly idealTree:prePrune ├── once@1.4.0
+471 silly idealTree:prePrune ├── onetime@5.1.2
+471 silly idealTree:prePrune ├── ora@5.4.1
+471 silly idealTree:prePrune ├── os-tmpdir@1.0.2
+471 silly idealTree:prePrune ├── p-cancelable@2.1.1
+471 silly idealTree:prePrune ├── p-iteration@1.1.8
+471 silly idealTree:prePrune ├── p-limit@3.1.0
+471 silly idealTree:prePrune ├── p-locate@5.0.0
+471 silly idealTree:prePrune ├── p-map@4.0.0
+471 silly idealTree:prePrune ├── p-try@2.2.0
+471 silly idealTree:prePrune ├── parse-json@2.2.0
+471 silly idealTree:prePrune ├── parse-ms@2.1.0
+471 silly idealTree:prePrune ├── path-exists@4.0.0
+471 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+471 silly idealTree:prePrune ├── path-parse@1.0.7
+471 silly idealTree:prePrune ├── path-type@4.0.0
+471 silly idealTree:prePrune ├── pend@1.2.0
+471 silly idealTree:prePrune ├── picomatch@2.3.0
+471 silly idealTree:prePrune ├── pify@2.3.0
+471 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+471 silly idealTree:prePrune ├── pinkie@2.0.4
+471 silly idealTree:prePrune ├─┬ pkg-dir@4.2.0
+471 silly idealTree:prePrune │ ├── find-up@4.1.0
+471 silly idealTree:prePrune │ ├── locate-path@5.0.0
+471 silly idealTree:prePrune │ ├── p-limit@2.3.0
+471 silly idealTree:prePrune │ └── p-locate@4.1.0
+471 silly idealTree:prePrune ├─┬ pretty-format@27.2.5
+471 silly idealTree:prePrune │ └── ansi-styles@5.2.0
+471 silly idealTree:prePrune ├── pretty-ms@7.0.1
+471 silly idealTree:prePrune ├── printj@1.1.2
+471 silly idealTree:prePrune ├── process-nextick-args@2.0.1
+471 silly idealTree:prePrune ├── progress@2.0.1
+471 silly idealTree:prePrune ├── proxy-from-env@1.1.0
+471 silly idealTree:prePrune ├── pseudomap@1.0.2
+471 silly idealTree:prePrune ├── pump@3.0.0
+471 silly idealTree:prePrune ├─┬ puppeteer-core@10.4.0
+471 silly idealTree:prePrune │ ├── debug@4.3.1
+471 silly idealTree:prePrune │ └── devtools-protocol@0.0.901419
+471 silly idealTree:prePrune ├── query-selector-shadow-dom@1.0.0
+471 silly idealTree:prePrune ├── queue-microtask@1.2.3
+471 silly idealTree:prePrune ├── quick-lru@5.1.1
+471 silly idealTree:prePrune ├─┬ randombytes@2.1.0
+471 silly idealTree:prePrune │ └── safe-buffer@5.2.1
+471 silly idealTree:prePrune ├── react-is@17.0.2
+471 silly idealTree:prePrune ├─┬ read-pkg-up@1.0.1
+471 silly idealTree:prePrune │ ├── find-up@1.1.2
+471 silly idealTree:prePrune │ └── path-exists@2.1.0
+471 silly idealTree:prePrune ├─┬ read-pkg@1.1.0
+471 silly idealTree:prePrune │ └── path-type@1.1.0
+471 silly idealTree:prePrune ├── readable-stream@3.6.0
+471 silly idealTree:prePrune ├── readdir-glob@1.1.1
+471 silly idealTree:prePrune ├── readdirp@3.6.0
+471 silly idealTree:prePrune ├── recursive-readdir@2.2.2
+471 silly idealTree:prePrune ├── require-directory@2.1.1
+471 silly idealTree:prePrune ├── resolve-alpn@1.2.1
+471 silly idealTree:prePrune ├── resolve@1.20.0
+471 silly idealTree:prePrune ├── responselike@2.0.0
+471 silly idealTree:prePrune ├── resq@1.10.1
+471 silly idealTree:prePrune ├── restore-cursor@3.1.0
+471 silly idealTree:prePrune ├── reusify@1.0.4
+471 silly idealTree:prePrune ├── rgb2hex@0.2.5
+471 silly idealTree:prePrune ├── rimraf@3.0.2
+471 silly idealTree:prePrune ├── run-async@2.4.1
+471 silly idealTree:prePrune ├── run-parallel@1.2.0
+471 silly idealTree:prePrune ├── rxjs@7.4.0
+471 silly idealTree:prePrune ├── safe-buffer@5.1.2
+471 silly idealTree:prePrune ├── safer-buffer@2.1.2
+471 silly idealTree:prePrune ├── semver@5.7.1
+471 silly idealTree:prePrune ├── serialize-error@8.1.0
+471 silly idealTree:prePrune ├── serialize-javascript@6.0.0
+471 silly idealTree:prePrune ├── signal-exit@3.0.5
+471 silly idealTree:prePrune ├── slash@3.0.0
+471 silly idealTree:prePrune ├── spdx-correct@3.1.1
+471 silly idealTree:prePrune ├── spdx-exceptions@2.3.0
+471 silly idealTree:prePrune ├── spdx-expression-parse@3.0.1
+471 silly idealTree:prePrune ├── spdx-license-ids@3.0.10
+471 silly idealTree:prePrune ├── split2@3.2.2
+471 silly idealTree:prePrune ├─┬ stack-utils@2.0.5
+471 silly idealTree:prePrune │ └── escape-string-regexp@2.0.0
+471 silly idealTree:prePrune ├── stream-buffers@3.0.2
+471 silly idealTree:prePrune ├─┬ string_decoder@1.3.0
+471 silly idealTree:prePrune │ └── safe-buffer@5.2.1
+471 silly idealTree:prePrune ├── string-width@4.2.3
+471 silly idealTree:prePrune ├── strip-ansi@6.0.1
+471 silly idealTree:prePrune ├── strip-bom@2.0.0
+471 silly idealTree:prePrune ├── strip-json-comments@3.1.1
+471 silly idealTree:prePrune ├── suffix@0.1.1
+471 silly idealTree:prePrune ├── supports-color@8.1.1
+471 silly idealTree:prePrune ├─┬ tar-fs@2.0.0
+471 silly idealTree:prePrune │ └── mkdirp@0.5.5
+471 silly idealTree:prePrune ├── tar-stream@2.2.0
+471 silly idealTree:prePrune ├─┬ tcp-port-used@1.0.2
+471 silly idealTree:prePrune │ └── debug@4.3.1
+471 silly idealTree:prePrune ├── text-table@0.2.0
+471 silly idealTree:prePrune ├── through@2.3.8
+471 silly idealTree:prePrune ├── tmp@0.0.33
+471 silly idealTree:prePrune ├── to-regex-range@5.0.1
+471 silly idealTree:prePrune ├─┬ ts-node@10.4.0
+471 silly idealTree:prePrune │ └── diff@4.0.2
+471 silly idealTree:prePrune ├── tslib@2.1.0
+471 silly idealTree:prePrune ├── type-fest@0.20.2
+471 silly idealTree:prePrune ├── typescript@4.4.4
+471 silly idealTree:prePrune ├── ua-parser-js@0.7.28
+471 silly idealTree:prePrune ├── unbzip2-stream@1.3.3
+471 silly idealTree:prePrune ├── universalify@2.0.0
+471 silly idealTree:prePrune ├── util-deprecate@1.0.2
+471 silly idealTree:prePrune ├── uuid@8.3.2
+471 silly idealTree:prePrune ├── validate-npm-package-license@3.0.4
+471 silly idealTree:prePrune ├── wcwidth@1.0.1
+471 silly idealTree:prePrune ├─┬ wdio-chromedriver-service@7.2.2
+471 silly idealTree:prePrune │ └── fs-extra@9.1.0
+471 silly idealTree:prePrune ├─┬ webdriver@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├─┬ webdriverio@7.14.1
+471 silly idealTree:prePrune │ ├── @types/node@15.14.9
+471 silly idealTree:prePrune │ └── @wdio/types@7.14.1
+471 silly idealTree:prePrune ├── which@2.0.2
+471 silly idealTree:prePrune ├── workerpool@6.1.5
+471 silly idealTree:prePrune ├── wrap-ansi@7.0.0
+471 silly idealTree:prePrune ├── wrappy@1.0.2
+471 silly idealTree:prePrune ├── ws@7.4.6
+471 silly idealTree:prePrune ├── y18n@5.0.8
+471 silly idealTree:prePrune ├── yallist@2.1.2
+471 silly idealTree:prePrune ├── yargs-parser@20.2.9
+471 silly idealTree:prePrune ├── yargs-unparser@2.0.0
+471 silly idealTree:prePrune ├── yargs@17.2.1
+471 silly idealTree:prePrune ├─┬ yarn-install@1.0.0
+471 silly idealTree:prePrune │ ├── ansi-regex@2.1.1
+471 silly idealTree:prePrune │ ├── ansi-styles@2.2.1
+471 silly idealTree:prePrune │ ├── chalk@1.1.3
+471 silly idealTree:prePrune │ ├── strip-ansi@3.0.1
+471 silly idealTree:prePrune │ └── supports-color@2.0.0
+471 silly idealTree:prePrune ├── yauzl@2.10.0
+471 silly idealTree:prePrune ├── yn@3.1.1
+471 silly idealTree:prePrune ├── yocto-queue@0.1.0
+471 silly idealTree:prePrune └── zip-stream@4.1.0
+472 silly loadIdealTree Finishing
+473 silly currentTree wdio-test
+473 silly currentTree ├── @babel/code-frame@7.15.8
+473 silly currentTree ├── @babel/helper-validator-identifier@7.15.7
+473 silly currentTree ├─┬ @babel/highlight@7.14.5
+473 silly currentTree │ ├── ansi-styles@3.2.1
+473 silly currentTree │ ├── chalk@2.4.2
+473 silly currentTree │ ├── color-convert@1.9.3
+473 silly currentTree │ ├── color-name@1.1.3
+473 silly currentTree │ ├── has-flag@3.0.0
+473 silly currentTree │ └── supports-color@5.5.0
+473 silly currentTree ├── @cspotcode/source-map-consumer@0.8.0
+473 silly currentTree ├── @cspotcode/source-map-support@0.7.0
+473 silly currentTree ├─┬ @jest/types@27.2.5
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @nodelib/fs.scandir@2.1.5
+473 silly currentTree ├── @nodelib/fs.stat@2.0.5
+473 silly currentTree ├── @nodelib/fs.walk@1.2.8
+473 silly currentTree ├── @sindresorhus/is@4.2.0
+473 silly currentTree ├── @szmarczak/http-timer@4.0.6
+473 silly currentTree ├── @testim/chrome-version@1.0.7
+473 silly currentTree ├── @tsconfig/node10@1.0.8
+473 silly currentTree ├── @tsconfig/node12@1.0.9
+473 silly currentTree ├── @tsconfig/node14@1.0.1
+473 silly currentTree ├── @tsconfig/node16@1.0.2
+473 silly currentTree ├── @types/aria-query@4.2.2
+473 silly currentTree ├─┬ @types/cacheable-request@6.0.2
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @types/diff@5.0.1
+473 silly currentTree ├── @types/easy-table@0.0.33
+473 silly currentTree ├── @types/ejs@3.1.0
+473 silly currentTree ├─┬ @types/fs-extra@9.0.13
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @types/http-cache-semantics@4.0.1
+473 silly currentTree ├── @types/inquirer@8.1.3
+473 silly currentTree ├── @types/istanbul-lib-coverage@2.0.3
+473 silly currentTree ├── @types/istanbul-lib-report@3.0.0
+473 silly currentTree ├── @types/istanbul-reports@3.0.1
+473 silly currentTree ├─┬ @types/keyv@3.1.3
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @types/lodash.flattendeep@4.4.6
+473 silly currentTree ├── @types/lodash.pickby@4.6.6
+473 silly currentTree ├── @types/lodash.union@4.6.6
+473 silly currentTree ├── @types/lodash@4.14.175
+473 silly currentTree ├── @types/mocha@9.0.0
+473 silly currentTree ├── @types/node@16.11.6
+473 silly currentTree ├── @types/object-inspect@1.8.1
+473 silly currentTree ├─┬ @types/recursive-readdir@2.2.0
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├─┬ @types/responselike@1.0.0
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @types/stack-utils@2.0.1
+473 silly currentTree ├─┬ @types/stream-buffers@3.0.4
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @types/supports-color@8.1.1
+473 silly currentTree ├─┬ @types/through@0.0.30
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @types/which@1.3.2
+473 silly currentTree ├── @types/yargs-parser@20.2.1
+473 silly currentTree ├── @types/yargs@16.0.4
+473 silly currentTree ├─┬ @types/yauzl@2.9.2
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @ungap/promise-all-settled@1.1.2
+473 silly currentTree ├─┬ @wdio/cli@7.14.1
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @wdio/config@7.14.1
+473 silly currentTree ├── @wdio/local-runner@7.14.1
+473 silly currentTree ├── @wdio/logger@7.7.0
+473 silly currentTree ├── @wdio/mocha-framework@7.14.1
+473 silly currentTree ├── @wdio/protocols@7.13.2
+473 silly currentTree ├── @wdio/repl@7.14.1
+473 silly currentTree ├─┬ @wdio/reporter@7.14.1
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @wdio/runner@7.14.1
+473 silly currentTree ├── @wdio/spec-reporter@7.14.1
+473 silly currentTree ├─┬ @wdio/types@7.14.1
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── @wdio/utils@7.14.1
+473 silly currentTree ├── acorn-walk@8.2.0
+473 silly currentTree ├── acorn@8.5.0
+473 silly currentTree ├── agent-base@6.0.2
+473 silly currentTree ├─┬ aggregate-error@3.1.0
+473 silly currentTree │ └── indent-string@4.0.0
+473 silly currentTree ├── ansi-colors@4.1.1
+473 silly currentTree ├─┬ ansi-escapes@4.3.2
+473 silly currentTree │ └── type-fest@0.21.3
+473 silly currentTree ├── ansi-regex@5.0.1
+473 silly currentTree ├── ansi-styles@4.3.0
+473 silly currentTree ├── anymatch@3.1.2
+473 silly currentTree ├─┬ archiver-utils@2.1.0
+473 silly currentTree │ ├── readable-stream@2.3.7
+473 silly currentTree │ └── string_decoder@1.1.1
+473 silly currentTree ├─┬ archiver@5.3.0
+473 silly currentTree │ └── async@3.2.1
+473 silly currentTree ├── arg@4.1.3
+473 silly currentTree ├── argparse@2.0.1
+473 silly currentTree ├── aria-query@5.0.0
+473 silly currentTree ├── array-union@2.1.0
+473 silly currentTree ├── async-exit-hook@2.0.1
+473 silly currentTree ├── async@0.9.2
+473 silly currentTree ├── at-least-node@1.0.0
+473 silly currentTree ├── atob@2.1.2
+473 silly currentTree ├── axios@0.21.4
+473 silly currentTree ├── balanced-match@1.0.2
+473 silly currentTree ├── base64-js@1.5.1
+473 silly currentTree ├── binary-extensions@2.2.0
+473 silly currentTree ├── bl@4.1.0
+473 silly currentTree ├── brace-expansion@1.1.11
+473 silly currentTree ├── braces@3.0.2
+473 silly currentTree ├── browser-stdout@1.3.1
+473 silly currentTree ├── buffer-crc32@0.2.13
+473 silly currentTree ├── buffer@5.7.1
+473 silly currentTree ├─┬ cac@3.0.4
+473 silly currentTree │ ├── ansi-regex@2.1.1
+473 silly currentTree │ ├── ansi-styles@2.2.1
+473 silly currentTree │ ├── chalk@1.1.3
+473 silly currentTree │ ├── strip-ansi@3.0.1
+473 silly currentTree │ └── supports-color@2.0.0
+473 silly currentTree ├── cacheable-lookup@5.0.4
+473 silly currentTree ├── cacheable-request@7.0.2
+473 silly currentTree ├─┬ camelcase-keys@3.0.0
+473 silly currentTree │ └── camelcase@3.0.0
+473 silly currentTree ├── camelcase@6.2.0
+473 silly currentTree ├─┬ chalk@4.1.2
+473 silly currentTree │ └── supports-color@7.2.0
+473 silly currentTree ├── chardet@0.7.0
+473 silly currentTree ├── chokidar@3.5.2
+473 silly currentTree ├── chownr@1.1.4
+473 silly currentTree ├─┬ chrome-launcher@0.14.1
+473 silly currentTree │ ├── @types/node@15.14.9
+473 silly currentTree │ └── escape-string-regexp@4.0.0
+473 silly currentTree ├── chromedriver@94.0.0
+473 silly currentTree ├── clean-stack@2.2.0
+473 silly currentTree ├── cli-cursor@3.1.0
+473 silly currentTree ├── cli-spinners@2.6.1
+473 silly currentTree ├── cli-width@3.0.0
+473 silly currentTree ├── cliui@7.0.4
+473 silly currentTree ├─┬ clone-response@1.0.2
+473 silly currentTree │ └── mimic-response@1.0.1
+473 silly currentTree ├── clone@1.0.4
+473 silly currentTree ├── color-convert@2.0.1
+473 silly currentTree ├── color-name@1.1.4
+473 silly currentTree ├── compress-commons@4.1.1
+473 silly currentTree ├── concat-map@0.0.1
+473 silly currentTree ├── core-util-is@1.0.3
+473 silly currentTree ├── crc-32@1.2.0
+473 silly currentTree ├── crc32-stream@4.0.2
+473 silly currentTree ├── create-require@1.1.1
+473 silly currentTree ├─┬ cross-spawn@4.0.2
+473 silly currentTree │ └── which@1.3.1
+473 silly currentTree ├── css-shorthand-properties@1.1.1
+473 silly currentTree ├── css-value@0.0.1
+473 silly currentTree ├── debug@4.3.2
+473 silly currentTree ├── decamelize@4.0.0
+473 silly currentTree ├── decompress-response@6.0.0
+473 silly currentTree ├── deep-is@0.1.4
+473 silly currentTree ├── deepmerge@4.2.2
+473 silly currentTree ├── defaults@1.0.3
+473 silly currentTree ├── defer-to-connect@2.0.1
+473 silly currentTree ├── del@6.0.0
+473 silly currentTree ├── devtools-protocol@0.0.927104
+473 silly currentTree ├─┬ devtools@7.14.1
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── diff-sequences@27.0.6
+473 silly currentTree ├── diff@5.0.0
+473 silly currentTree ├── dir-glob@3.0.1
+473 silly currentTree ├── easy-table@1.2.0
+473 silly currentTree ├── edge-paths@2.2.1
+473 silly currentTree ├── ejs@3.1.6
+473 silly currentTree ├── emoji-regex@8.0.0
+473 silly currentTree ├── end-of-stream@1.4.4
+473 silly currentTree ├── error-ex@1.3.2
+473 silly currentTree ├── escalade@3.1.1
+473 silly currentTree ├── escape-string-regexp@1.0.5
+473 silly currentTree ├── exit-on-epipe@1.0.1
+473 silly currentTree ├── expect-webdriverio@3.1.4
+473 silly currentTree ├─┬ expect@27.2.5
+473 silly currentTree │ └── ansi-styles@5.2.0
+473 silly currentTree ├── external-editor@3.1.0
+473 silly currentTree ├── extract-zip@2.0.1
+473 silly currentTree ├── fast-deep-equal@2.0.1
+473 silly currentTree ├── fast-glob@3.2.7
+473 silly currentTree ├── fastq@1.13.0
+473 silly currentTree ├── fd-slicer@1.1.0
+473 silly currentTree ├── figures@3.2.0
+473 silly currentTree ├── filelist@1.0.2
+473 silly currentTree ├── fill-range@7.0.1
+473 silly currentTree ├── find-up@5.0.0
+473 silly currentTree ├── flat@5.0.2
+473 silly currentTree ├── follow-redirects@1.14.4
+473 silly currentTree ├── fs-constants@1.0.0
+473 silly currentTree ├── fs-extra@10.0.0
+473 silly currentTree ├── fs.realpath@1.0.0
+473 silly currentTree ├── function-bind@1.1.1
+473 silly currentTree ├── gaze@1.1.3
+473 silly currentTree ├── get-caller-file@2.0.5
+473 silly currentTree ├── get-port@5.1.1
+473 silly currentTree ├── get-stream@5.2.0
+473 silly currentTree ├── glob-parent@5.1.2
+473 silly currentTree ├── glob@7.2.0
+473 silly currentTree ├── globby@11.0.4
+473 silly currentTree ├─┬ globule@1.3.3
+473 silly currentTree │ └── glob@7.1.7
+473 silly currentTree ├── got@11.8.2
+473 silly currentTree ├── graceful-fs@4.2.8
+473 silly currentTree ├── grapheme-splitter@1.0.4
+473 silly currentTree ├── growl@1.10.5
+473 silly currentTree ├─┬ has-ansi@2.0.0
+473 silly currentTree │ └── ansi-regex@2.1.1
+473 silly currentTree ├── has-flag@4.0.0
+473 silly currentTree ├── has@1.0.3
+473 silly currentTree ├── he@1.2.0
+473 silly currentTree ├── hosted-git-info@2.8.9
+473 silly currentTree ├── http-cache-semantics@4.1.0
+473 silly currentTree ├── http2-wrapper@1.0.3
+473 silly currentTree ├── https-proxy-agent@5.0.0
+473 silly currentTree ├── iconv-lite@0.4.24
+473 silly currentTree ├── ieee754@1.2.1
+473 silly currentTree ├── ignore@5.1.8
+473 silly currentTree ├── indent-string@3.2.0
+473 silly currentTree ├── inflight@1.0.6
+473 silly currentTree ├── inherits@2.0.4
+473 silly currentTree ├── inquirer@8.1.5
+473 silly currentTree ├── ip-regex@4.3.0
+473 silly currentTree ├── is-arrayish@0.2.1
+473 silly currentTree ├── is-binary-path@2.1.0
+473 silly currentTree ├── is-core-module@2.7.0
+473 silly currentTree ├── is-docker@2.2.1
+473 silly currentTree ├── is-extglob@2.1.1
+473 silly currentTree ├── is-fullwidth-code-point@3.0.0
+473 silly currentTree ├── is-glob@4.0.3
+473 silly currentTree ├── is-interactive@1.0.0
+473 silly currentTree ├── is-number@7.0.0
+473 silly currentTree ├── is-path-cwd@2.2.0
+473 silly currentTree ├── is-path-inside@3.0.3
+473 silly currentTree ├── is-plain-obj@2.1.0
+473 silly currentTree ├── is-unicode-supported@0.1.0
+473 silly currentTree ├── is-url@1.2.4
+473 silly currentTree ├── is-utf8@0.2.1
+473 silly currentTree ├── is-wsl@2.2.0
+473 silly currentTree ├── is2@2.0.7
+473 silly currentTree ├── isarray@1.0.0
+473 silly currentTree ├── isexe@2.0.0
+473 silly currentTree ├─┬ jake@10.8.2
+473 silly currentTree │ ├── ansi-styles@3.2.1
+473 silly currentTree │ ├── chalk@2.4.2
+473 silly currentTree │ ├── color-convert@1.9.3
+473 silly currentTree │ ├── color-name@1.1.3
+473 silly currentTree │ ├── has-flag@3.0.0
+473 silly currentTree │ └── supports-color@5.5.0
+473 silly currentTree ├── jest-diff@27.2.5
+473 silly currentTree ├── jest-get-type@27.0.6
+473 silly currentTree ├── jest-matcher-utils@27.2.5
+473 silly currentTree ├── jest-message-util@27.2.5
+473 silly currentTree ├── jest-regex-util@27.0.6
+473 silly currentTree ├── js-tokens@4.0.0
+473 silly currentTree ├── js-yaml@4.1.0
+473 silly currentTree ├── json-buffer@3.0.1
+473 silly currentTree ├── jsonfile@6.1.0
+473 silly currentTree ├── keyv@4.0.3
+473 silly currentTree ├── ky@0.28.5
+473 silly currentTree ├─┬ lazystream@1.0.0
+473 silly currentTree │ ├── readable-stream@2.3.7
+473 silly currentTree │ └── string_decoder@1.1.1
+473 silly currentTree ├─┬ lighthouse-logger@1.3.0
+473 silly currentTree │ ├── debug@2.6.9
+473 silly currentTree │ └── ms@2.0.0
+473 silly currentTree ├── load-json-file@1.1.0
+473 silly currentTree ├── locate-path@6.0.0
+473 silly currentTree ├── lodash.clonedeep@4.5.0
+473 silly currentTree ├── lodash.defaults@4.2.0
+473 silly currentTree ├── lodash.difference@4.5.0
+473 silly currentTree ├── lodash.flatten@4.4.0
+473 silly currentTree ├── lodash.flattendeep@4.4.0
+473 silly currentTree ├── lodash.isobject@3.0.2
+473 silly currentTree ├── lodash.isplainobject@4.0.6
+473 silly currentTree ├── lodash.merge@4.6.2
+473 silly currentTree ├── lodash.pickby@4.6.0
+473 silly currentTree ├── lodash.union@4.6.0
+473 silly currentTree ├── lodash.zip@4.2.0
+473 silly currentTree ├── lodash@4.17.21
+473 silly currentTree ├── log-symbols@4.1.0
+473 silly currentTree ├── loglevel-plugin-prefix@0.8.4
+473 silly currentTree ├── loglevel@1.7.1
+473 silly currentTree ├── lowercase-keys@2.0.0
+473 silly currentTree ├── lru-cache@4.1.5
+473 silly currentTree ├── make-error@1.3.6
+473 silly currentTree ├── map-obj@1.0.1
+473 silly currentTree ├── marky@1.2.2
+473 silly currentTree ├── merge2@1.4.1
+473 silly currentTree ├── micromatch@4.0.4
+473 silly currentTree ├── mimic-fn@2.1.0
+473 silly currentTree ├── mimic-response@3.1.0
+473 silly currentTree ├── minimatch@3.0.4
+473 silly currentTree ├── minimist@1.2.5
+473 silly currentTree ├── mkdirp@1.0.4
+473 silly currentTree ├─┬ mocha@9.1.2
+473 silly currentTree │ ├── escape-string-regexp@4.0.0
+473 silly currentTree │ ├── glob@7.1.7
+473 silly currentTree │ ├── ms@2.1.3
+473 silly currentTree │ ├── yargs-parser@20.2.4
+473 silly currentTree │ └─┬ yargs@16.2.0
+473 silly currentTree │   └── yargs-parser@20.2.9
+473 silly currentTree ├── ms@2.1.2
+473 silly currentTree ├── mute-stream@0.0.8
+473 silly currentTree ├── nanoid@3.1.25
+473 silly currentTree ├── node-fetch@2.6.1
+473 silly currentTree ├── normalize-package-data@2.5.0
+473 silly currentTree ├── normalize-path@3.0.0
+473 silly currentTree ├── normalize-url@6.1.0
+473 silly currentTree ├── object-inspect@1.11.0
+473 silly currentTree ├── once@1.4.0
+473 silly currentTree ├── onetime@5.1.2
+473 silly currentTree ├── ora@5.4.1
+473 silly currentTree ├── os-tmpdir@1.0.2
+473 silly currentTree ├── p-cancelable@2.1.1
+473 silly currentTree ├── p-iteration@1.1.8
+473 silly currentTree ├── p-limit@3.1.0
+473 silly currentTree ├── p-locate@5.0.0
+473 silly currentTree ├── p-map@4.0.0
+473 silly currentTree ├── p-try@2.2.0
+473 silly currentTree ├── parse-json@2.2.0
+473 silly currentTree ├── parse-ms@2.1.0
+473 silly currentTree ├── path-exists@4.0.0
+473 silly currentTree ├── path-is-absolute@1.0.1
+473 silly currentTree ├── path-parse@1.0.7
+473 silly currentTree ├── path-type@4.0.0
+473 silly currentTree ├── pend@1.2.0
+473 silly currentTree ├── picomatch@2.3.0
+473 silly currentTree ├── pify@2.3.0
+473 silly currentTree ├── pinkie-promise@2.0.1
+473 silly currentTree ├── pinkie@2.0.4
+473 silly currentTree ├─┬ pkg-dir@4.2.0
+473 silly currentTree │ ├── find-up@4.1.0
+473 silly currentTree │ ├── locate-path@5.0.0
+473 silly currentTree │ ├── p-limit@2.3.0
+473 silly currentTree │ └── p-locate@4.1.0
+473 silly currentTree ├─┬ pretty-format@27.2.5
+473 silly currentTree │ └── ansi-styles@5.2.0
+473 silly currentTree ├── pretty-ms@7.0.1
+473 silly currentTree ├── printj@1.1.2
+473 silly currentTree ├── process-nextick-args@2.0.1
+473 silly currentTree ├── progress@2.0.1
+473 silly currentTree ├── proxy-from-env@1.1.0
+473 silly currentTree ├── pseudomap@1.0.2
+473 silly currentTree ├── pump@3.0.0
+473 silly currentTree ├─┬ puppeteer-core@10.4.0
+473 silly currentTree │ ├── debug@4.3.1
+473 silly currentTree │ └── devtools-protocol@0.0.901419
+473 silly currentTree ├── query-selector-shadow-dom@1.0.0
+473 silly currentTree ├── queue-microtask@1.2.3
+473 silly currentTree ├── quick-lru@5.1.1
+473 silly currentTree ├─┬ randombytes@2.1.0
+473 silly currentTree │ └── safe-buffer@5.2.1
+473 silly currentTree ├── react-is@17.0.2
+473 silly currentTree ├─┬ read-pkg-up@1.0.1
+473 silly currentTree │ ├── find-up@1.1.2
+473 silly currentTree │ └── path-exists@2.1.0
+473 silly currentTree ├─┬ read-pkg@1.1.0
+473 silly currentTree │ └── path-type@1.1.0
+473 silly currentTree ├── readable-stream@3.6.0
+473 silly currentTree ├── readdir-glob@1.1.1
+473 silly currentTree ├── readdirp@3.6.0
+473 silly currentTree ├── recursive-readdir@2.2.2
+473 silly currentTree ├── require-directory@2.1.1
+473 silly currentTree ├── resolve-alpn@1.2.1
+473 silly currentTree ├── resolve@1.20.0
+473 silly currentTree ├── responselike@2.0.0
+473 silly currentTree ├── resq@1.10.1
+473 silly currentTree ├── restore-cursor@3.1.0
+473 silly currentTree ├── reusify@1.0.4
+473 silly currentTree ├── rgb2hex@0.2.5
+473 silly currentTree ├── rimraf@3.0.2
+473 silly currentTree ├── run-async@2.4.1
+473 silly currentTree ├── run-parallel@1.2.0
+473 silly currentTree ├── rxjs@7.4.0
+473 silly currentTree ├── safe-buffer@5.1.2
+473 silly currentTree ├── safer-buffer@2.1.2
+473 silly currentTree ├── semver@5.7.1
+473 silly currentTree ├── serialize-error@8.1.0
+473 silly currentTree ├── serialize-javascript@6.0.0
+473 silly currentTree ├── signal-exit@3.0.5
+473 silly currentTree ├── slash@3.0.0
+473 silly currentTree ├── spdx-correct@3.1.1
+473 silly currentTree ├── spdx-exceptions@2.3.0
+473 silly currentTree ├── spdx-expression-parse@3.0.1
+473 silly currentTree ├── spdx-license-ids@3.0.10
+473 silly currentTree ├── split2@3.2.2
+473 silly currentTree ├─┬ stack-utils@2.0.5
+473 silly currentTree │ └── escape-string-regexp@2.0.0
+473 silly currentTree ├── stream-buffers@3.0.2
+473 silly currentTree ├─┬ string_decoder@1.3.0
+473 silly currentTree │ └── safe-buffer@5.2.1
+473 silly currentTree ├── string-width@4.2.3
+473 silly currentTree ├── strip-ansi@6.0.1
+473 silly currentTree ├── strip-bom@2.0.0
+473 silly currentTree ├── strip-json-comments@3.1.1
+473 silly currentTree ├── suffix@0.1.1
+473 silly currentTree ├── supports-color@8.1.1
+473 silly currentTree ├─┬ tar-fs@2.0.0
+473 silly currentTree │ └── mkdirp@0.5.5
+473 silly currentTree ├── tar-stream@2.2.0
+473 silly currentTree ├─┬ tcp-port-used@1.0.2
+473 silly currentTree │ └── debug@4.3.1
+473 silly currentTree ├── text-table@0.2.0
+473 silly currentTree ├── through@2.3.8
+473 silly currentTree ├── tmp@0.0.33
+473 silly currentTree ├── to-regex-range@5.0.1
+473 silly currentTree ├─┬ ts-node@10.4.0
+473 silly currentTree │ └── diff@4.0.2
+473 silly currentTree ├── tslib@2.1.0
+473 silly currentTree ├── type-fest@0.20.2
+473 silly currentTree ├── typescript@4.4.4
+473 silly currentTree ├── ua-parser-js@0.7.28
+473 silly currentTree ├── unbzip2-stream@1.3.3
+473 silly currentTree ├── universalify@2.0.0
+473 silly currentTree ├── util-deprecate@1.0.2
+473 silly currentTree ├── uuid@8.3.2
+473 silly currentTree ├── validate-npm-package-license@3.0.4
+473 silly currentTree ├── wcwidth@1.0.1
+473 silly currentTree ├─┬ wdio-chromedriver-service@7.2.2
+473 silly currentTree │ └── fs-extra@9.1.0
+473 silly currentTree ├─┬ webdriver@7.14.1
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├─┬ webdriverio@7.14.1
+473 silly currentTree │ └── @types/node@15.14.9
+473 silly currentTree ├── which@2.0.2
+473 silly currentTree ├── workerpool@6.1.5
+473 silly currentTree ├── wrap-ansi@7.0.0
+473 silly currentTree ├── wrappy@1.0.2
+473 silly currentTree ├── ws@7.4.6
+473 silly currentTree ├── y18n@5.0.8
+473 silly currentTree ├── yallist@2.1.2
+473 silly currentTree ├── yargs-parser@20.2.9
+473 silly currentTree ├── yargs-unparser@2.0.0
+473 silly currentTree ├── yargs@17.2.1
+473 silly currentTree ├─┬ yarn-install@1.0.0
+473 silly currentTree │ ├── ansi-regex@2.1.1
+473 silly currentTree │ ├── ansi-styles@2.2.1
+473 silly currentTree │ ├── chalk@1.1.3
+473 silly currentTree │ ├── strip-ansi@3.0.1
+473 silly currentTree │ └── supports-color@2.0.0
+473 silly currentTree ├── yauzl@2.10.0
+473 silly currentTree ├── yn@3.1.1
+473 silly currentTree ├── yocto-queue@0.1.0
+473 silly currentTree └── zip-stream@4.1.0
+474 silly idealTree wdio-test
+474 silly idealTree ├── @babel/code-frame@7.15.8
+474 silly idealTree ├── @babel/helper-validator-identifier@7.15.7
+474 silly idealTree ├─┬ @babel/highlight@7.14.5
+474 silly idealTree │ ├── ansi-styles@3.2.1
+474 silly idealTree │ ├── chalk@2.4.2
+474 silly idealTree │ ├── color-convert@1.9.3
+474 silly idealTree │ ├── color-name@1.1.3
+474 silly idealTree │ ├── has-flag@3.0.0
+474 silly idealTree │ └── supports-color@5.5.0
+474 silly idealTree ├── @cspotcode/source-map-consumer@0.8.0
+474 silly idealTree ├── @cspotcode/source-map-support@0.7.0
+474 silly idealTree ├─┬ @jest/types@27.2.5
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @nodelib/fs.scandir@2.1.5
+474 silly idealTree ├── @nodelib/fs.stat@2.0.5
+474 silly idealTree ├── @nodelib/fs.walk@1.2.8
+474 silly idealTree ├── @sindresorhus/is@4.2.0
+474 silly idealTree ├── @szmarczak/http-timer@4.0.6
+474 silly idealTree ├── @testim/chrome-version@1.0.7
+474 silly idealTree ├── @tsconfig/node10@1.0.8
+474 silly idealTree ├── @tsconfig/node12@1.0.9
+474 silly idealTree ├── @tsconfig/node14@1.0.1
+474 silly idealTree ├── @tsconfig/node16@1.0.2
+474 silly idealTree ├── @types/aria-query@4.2.2
+474 silly idealTree ├─┬ @types/cacheable-request@6.0.2
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @types/diff@5.0.1
+474 silly idealTree ├── @types/easy-table@0.0.33
+474 silly idealTree ├── @types/ejs@3.1.0
+474 silly idealTree ├─┬ @types/fs-extra@9.0.13
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @types/http-cache-semantics@4.0.1
+474 silly idealTree ├── @types/inquirer@8.1.3
+474 silly idealTree ├── @types/istanbul-lib-coverage@2.0.3
+474 silly idealTree ├── @types/istanbul-lib-report@3.0.0
+474 silly idealTree ├── @types/istanbul-reports@3.0.1
+474 silly idealTree ├─┬ @types/keyv@3.1.3
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @types/lodash.flattendeep@4.4.6
+474 silly idealTree ├── @types/lodash.pickby@4.6.6
+474 silly idealTree ├── @types/lodash.union@4.6.6
+474 silly idealTree ├── @types/lodash@4.14.175
+474 silly idealTree ├── @types/mocha@9.0.0
+474 silly idealTree ├── @types/node@16.11.6
+474 silly idealTree ├── @types/object-inspect@1.8.1
+474 silly idealTree ├─┬ @types/recursive-readdir@2.2.0
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├─┬ @types/responselike@1.0.0
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @types/stack-utils@2.0.1
+474 silly idealTree ├─┬ @types/stream-buffers@3.0.4
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @types/supports-color@8.1.1
+474 silly idealTree ├─┬ @types/through@0.0.30
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @types/which@1.3.2
+474 silly idealTree ├── @types/yargs-parser@20.2.1
+474 silly idealTree ├── @types/yargs@16.0.4
+474 silly idealTree ├─┬ @types/yauzl@2.9.2
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├── @ungap/promise-all-settled@1.1.2
+474 silly idealTree ├─┬ @wdio/cli@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├─┬ @wdio/config@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├─┬ @wdio/local-runner@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├── @wdio/logger@7.7.0
+474 silly idealTree ├─┬ @wdio/mocha-framework@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├── @wdio/protocols@7.13.2
+474 silly idealTree ├── @wdio/repl@7.14.1
+474 silly idealTree ├─┬ @wdio/reporter@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├─┬ @wdio/runner@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├─┬ @wdio/spec-reporter@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├─┬ @wdio/types@7.13.2
+474 silly idealTree │ └── @types/node@15.14.9
+474 silly idealTree ├─┬ @wdio/utils@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├── acorn-walk@8.2.0
+474 silly idealTree ├── acorn@8.5.0
+474 silly idealTree ├── agent-base@6.0.2
+474 silly idealTree ├─┬ aggregate-error@3.1.0
+474 silly idealTree │ └── indent-string@4.0.0
+474 silly idealTree ├── ansi-colors@4.1.1
+474 silly idealTree ├─┬ ansi-escapes@4.3.2
+474 silly idealTree │ └── type-fest@0.21.3
+474 silly idealTree ├── ansi-regex@5.0.1
+474 silly idealTree ├── ansi-styles@4.3.0
+474 silly idealTree ├── anymatch@3.1.2
+474 silly idealTree ├─┬ archiver-utils@2.1.0
+474 silly idealTree │ ├── readable-stream@2.3.7
+474 silly idealTree │ └── string_decoder@1.1.1
+474 silly idealTree ├─┬ archiver@5.3.0
+474 silly idealTree │ └── async@3.2.1
+474 silly idealTree ├── arg@4.1.3
+474 silly idealTree ├── argparse@2.0.1
+474 silly idealTree ├── aria-query@5.0.0
+474 silly idealTree ├── array-union@2.1.0
+474 silly idealTree ├── async-exit-hook@2.0.1
+474 silly idealTree ├── async@0.9.2
+474 silly idealTree ├── at-least-node@1.0.0
+474 silly idealTree ├── atob@2.1.2
+474 silly idealTree ├── axios@0.21.4
+474 silly idealTree ├── balanced-match@1.0.2
+474 silly idealTree ├── base64-js@1.5.1
+474 silly idealTree ├── binary-extensions@2.2.0
+474 silly idealTree ├── bl@4.1.0
+474 silly idealTree ├── brace-expansion@1.1.11
+474 silly idealTree ├── braces@3.0.2
+474 silly idealTree ├── browser-stdout@1.3.1
+474 silly idealTree ├── buffer-crc32@0.2.13
+474 silly idealTree ├── buffer@5.7.1
+474 silly idealTree ├─┬ cac@3.0.4
+474 silly idealTree │ ├── ansi-regex@2.1.1
+474 silly idealTree │ ├── ansi-styles@2.2.1
+474 silly idealTree │ ├── chalk@1.1.3
+474 silly idealTree │ ├── strip-ansi@3.0.1
+474 silly idealTree │ └── supports-color@2.0.0
+474 silly idealTree ├── cacheable-lookup@5.0.4
+474 silly idealTree ├── cacheable-request@7.0.2
+474 silly idealTree ├─┬ camelcase-keys@3.0.0
+474 silly idealTree │ └── camelcase@3.0.0
+474 silly idealTree ├── camelcase@6.2.0
+474 silly idealTree ├─┬ chalk@4.1.2
+474 silly idealTree │ └── supports-color@7.2.0
+474 silly idealTree ├── chardet@0.7.0
+474 silly idealTree ├── chokidar@3.5.2
+474 silly idealTree ├── chownr@1.1.4
+474 silly idealTree ├─┬ chrome-launcher@0.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── escape-string-regexp@4.0.0
+474 silly idealTree ├── chromedriver@94.0.0
+474 silly idealTree ├── clean-stack@2.2.0
+474 silly idealTree ├── cli-cursor@3.1.0
+474 silly idealTree ├── cli-spinners@2.6.1
+474 silly idealTree ├── cli-width@3.0.0
+474 silly idealTree ├── cliui@7.0.4
+474 silly idealTree ├─┬ clone-response@1.0.2
+474 silly idealTree │ └── mimic-response@1.0.1
+474 silly idealTree ├── clone@1.0.4
+474 silly idealTree ├── color-convert@2.0.1
+474 silly idealTree ├── color-name@1.1.4
+474 silly idealTree ├── compress-commons@4.1.1
+474 silly idealTree ├── concat-map@0.0.1
+474 silly idealTree ├── core-util-is@1.0.3
+474 silly idealTree ├── crc-32@1.2.0
+474 silly idealTree ├── crc32-stream@4.0.2
+474 silly idealTree ├── create-require@1.1.1
+474 silly idealTree ├─┬ cross-spawn@4.0.2
+474 silly idealTree │ └── which@1.3.1
+474 silly idealTree ├── css-shorthand-properties@1.1.1
+474 silly idealTree ├── css-value@0.0.1
+474 silly idealTree ├── debug@4.3.2
+474 silly idealTree ├── decamelize@4.0.0
+474 silly idealTree ├── decompress-response@6.0.0
+474 silly idealTree ├── deep-is@0.1.4
+474 silly idealTree ├── deepmerge@4.2.2
+474 silly idealTree ├── defaults@1.0.3
+474 silly idealTree ├── defer-to-connect@2.0.1
+474 silly idealTree ├── del@6.0.0
+474 silly idealTree ├── devtools-protocol@0.0.927104
+474 silly idealTree ├─┬ devtools@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├── diff-sequences@27.0.6
+474 silly idealTree ├── diff@5.0.0
+474 silly idealTree ├── dir-glob@3.0.1
+474 silly idealTree ├── easy-table@1.2.0
+474 silly idealTree ├── edge-paths@2.2.1
+474 silly idealTree ├── ejs@3.1.6
+474 silly idealTree ├── emoji-regex@8.0.0
+474 silly idealTree ├── end-of-stream@1.4.4
+474 silly idealTree ├── error-ex@1.3.2
+474 silly idealTree ├── escalade@3.1.1
+474 silly idealTree ├── escape-string-regexp@1.0.5
+474 silly idealTree ├── exit-on-epipe@1.0.1
+474 silly idealTree ├── expect-webdriverio@3.1.4
+474 silly idealTree ├─┬ expect@27.2.5
+474 silly idealTree │ └── ansi-styles@5.2.0
+474 silly idealTree ├── external-editor@3.1.0
+474 silly idealTree ├── extract-zip@2.0.1
+474 silly idealTree ├── fast-deep-equal@2.0.1
+474 silly idealTree ├── fast-glob@3.2.7
+474 silly idealTree ├── fastq@1.13.0
+474 silly idealTree ├── fd-slicer@1.1.0
+474 silly idealTree ├── figures@3.2.0
+474 silly idealTree ├── filelist@1.0.2
+474 silly idealTree ├── fill-range@7.0.1
+474 silly idealTree ├── find-up@5.0.0
+474 silly idealTree ├── flat@5.0.2
+474 silly idealTree ├── follow-redirects@1.14.4
+474 silly idealTree ├── fs-constants@1.0.0
+474 silly idealTree ├── fs-extra@10.0.0
+474 silly idealTree ├── fs.realpath@1.0.0
+474 silly idealTree ├── function-bind@1.1.1
+474 silly idealTree ├── gaze@1.1.3
+474 silly idealTree ├── get-caller-file@2.0.5
+474 silly idealTree ├── get-port@5.1.1
+474 silly idealTree ├── get-stream@5.2.0
+474 silly idealTree ├── glob-parent@5.1.2
+474 silly idealTree ├── glob@7.2.0
+474 silly idealTree ├── globby@11.0.4
+474 silly idealTree ├─┬ globule@1.3.3
+474 silly idealTree │ └── glob@7.1.7
+474 silly idealTree ├── got@11.8.2
+474 silly idealTree ├── graceful-fs@4.2.8
+474 silly idealTree ├── grapheme-splitter@1.0.4
+474 silly idealTree ├── growl@1.10.5
+474 silly idealTree ├─┬ has-ansi@2.0.0
+474 silly idealTree │ └── ansi-regex@2.1.1
+474 silly idealTree ├── has-flag@4.0.0
+474 silly idealTree ├── has@1.0.3
+474 silly idealTree ├── he@1.2.0
+474 silly idealTree ├── hosted-git-info@2.8.9
+474 silly idealTree ├── http-cache-semantics@4.1.0
+474 silly idealTree ├── http2-wrapper@1.0.3
+474 silly idealTree ├── https-proxy-agent@5.0.0
+474 silly idealTree ├── iconv-lite@0.4.24
+474 silly idealTree ├── ieee754@1.2.1
+474 silly idealTree ├── ignore@5.1.8
+474 silly idealTree ├── indent-string@3.2.0
+474 silly idealTree ├── inflight@1.0.6
+474 silly idealTree ├── inherits@2.0.4
+474 silly idealTree ├── inquirer@8.1.5
+474 silly idealTree ├── ip-regex@4.3.0
+474 silly idealTree ├── is-arrayish@0.2.1
+474 silly idealTree ├── is-binary-path@2.1.0
+474 silly idealTree ├── is-core-module@2.7.0
+474 silly idealTree ├── is-docker@2.2.1
+474 silly idealTree ├── is-extglob@2.1.1
+474 silly idealTree ├── is-fullwidth-code-point@3.0.0
+474 silly idealTree ├── is-glob@4.0.3
+474 silly idealTree ├── is-interactive@1.0.0
+474 silly idealTree ├── is-number@7.0.0
+474 silly idealTree ├── is-path-cwd@2.2.0
+474 silly idealTree ├── is-path-inside@3.0.3
+474 silly idealTree ├── is-plain-obj@2.1.0
+474 silly idealTree ├── is-unicode-supported@0.1.0
+474 silly idealTree ├── is-url@1.2.4
+474 silly idealTree ├── is-utf8@0.2.1
+474 silly idealTree ├── is-wsl@2.2.0
+474 silly idealTree ├── is2@2.0.7
+474 silly idealTree ├── isarray@1.0.0
+474 silly idealTree ├── isexe@2.0.0
+474 silly idealTree ├─┬ jake@10.8.2
+474 silly idealTree │ ├── ansi-styles@3.2.1
+474 silly idealTree │ ├── chalk@2.4.2
+474 silly idealTree │ ├── color-convert@1.9.3
+474 silly idealTree │ ├── color-name@1.1.3
+474 silly idealTree │ ├── has-flag@3.0.0
+474 silly idealTree │ └── supports-color@5.5.0
+474 silly idealTree ├── jest-diff@27.2.5
+474 silly idealTree ├── jest-get-type@27.0.6
+474 silly idealTree ├── jest-matcher-utils@27.2.5
+474 silly idealTree ├── jest-message-util@27.2.5
+474 silly idealTree ├── jest-regex-util@27.0.6
+474 silly idealTree ├── js-tokens@4.0.0
+474 silly idealTree ├── js-yaml@4.1.0
+474 silly idealTree ├── json-buffer@3.0.1
+474 silly idealTree ├── jsonfile@6.1.0
+474 silly idealTree ├── keyv@4.0.3
+474 silly idealTree ├── ky@0.28.5
+474 silly idealTree ├─┬ lazystream@1.0.0
+474 silly idealTree │ ├── readable-stream@2.3.7
+474 silly idealTree │ └── string_decoder@1.1.1
+474 silly idealTree ├─┬ lighthouse-logger@1.3.0
+474 silly idealTree │ ├── debug@2.6.9
+474 silly idealTree │ └── ms@2.0.0
+474 silly idealTree ├── load-json-file@1.1.0
+474 silly idealTree ├── locate-path@6.0.0
+474 silly idealTree ├── lodash.clonedeep@4.5.0
+474 silly idealTree ├── lodash.defaults@4.2.0
+474 silly idealTree ├── lodash.difference@4.5.0
+474 silly idealTree ├── lodash.flatten@4.4.0
+474 silly idealTree ├── lodash.flattendeep@4.4.0
+474 silly idealTree ├── lodash.isobject@3.0.2
+474 silly idealTree ├── lodash.isplainobject@4.0.6
+474 silly idealTree ├── lodash.merge@4.6.2
+474 silly idealTree ├── lodash.pickby@4.6.0
+474 silly idealTree ├── lodash.union@4.6.0
+474 silly idealTree ├── lodash.zip@4.2.0
+474 silly idealTree ├── lodash@4.17.21
+474 silly idealTree ├── log-symbols@4.1.0
+474 silly idealTree ├── loglevel-plugin-prefix@0.8.4
+474 silly idealTree ├── loglevel@1.7.1
+474 silly idealTree ├── lowercase-keys@2.0.0
+474 silly idealTree ├── lru-cache@4.1.5
+474 silly idealTree ├── make-error@1.3.6
+474 silly idealTree ├── map-obj@1.0.1
+474 silly idealTree ├── marky@1.2.2
+474 silly idealTree ├── merge2@1.4.1
+474 silly idealTree ├── micromatch@4.0.4
+474 silly idealTree ├── mimic-fn@2.1.0
+474 silly idealTree ├── mimic-response@3.1.0
+474 silly idealTree ├── minimatch@3.0.4
+474 silly idealTree ├── minimist@1.2.5
+474 silly idealTree ├── mkdirp@1.0.4
+474 silly idealTree ├─┬ mocha@9.1.2
+474 silly idealTree │ ├── escape-string-regexp@4.0.0
+474 silly idealTree │ ├── glob@7.1.7
+474 silly idealTree │ ├── ms@2.1.3
+474 silly idealTree │ ├── yargs-parser@20.2.4
+474 silly idealTree │ └─┬ yargs@16.2.0
+474 silly idealTree │   └── yargs-parser@20.2.9
+474 silly idealTree ├── ms@2.1.2
+474 silly idealTree ├── mute-stream@0.0.8
+474 silly idealTree ├── nanoid@3.1.25
+474 silly idealTree ├── node-fetch@2.6.1
+474 silly idealTree ├── normalize-package-data@2.5.0
+474 silly idealTree ├── normalize-path@3.0.0
+474 silly idealTree ├── normalize-url@6.1.0
+474 silly idealTree ├── object-inspect@1.11.0
+474 silly idealTree ├── once@1.4.0
+474 silly idealTree ├── onetime@5.1.2
+474 silly idealTree ├── ora@5.4.1
+474 silly idealTree ├── os-tmpdir@1.0.2
+474 silly idealTree ├── p-cancelable@2.1.1
+474 silly idealTree ├── p-iteration@1.1.8
+474 silly idealTree ├── p-limit@3.1.0
+474 silly idealTree ├── p-locate@5.0.0
+474 silly idealTree ├── p-map@4.0.0
+474 silly idealTree ├── p-try@2.2.0
+474 silly idealTree ├── parse-json@2.2.0
+474 silly idealTree ├── parse-ms@2.1.0
+474 silly idealTree ├── path-exists@4.0.0
+474 silly idealTree ├── path-is-absolute@1.0.1
+474 silly idealTree ├── path-parse@1.0.7
+474 silly idealTree ├── path-type@4.0.0
+474 silly idealTree ├── pend@1.2.0
+474 silly idealTree ├── picomatch@2.3.0
+474 silly idealTree ├── pify@2.3.0
+474 silly idealTree ├── pinkie-promise@2.0.1
+474 silly idealTree ├── pinkie@2.0.4
+474 silly idealTree ├─┬ pkg-dir@4.2.0
+474 silly idealTree │ ├── find-up@4.1.0
+474 silly idealTree │ ├── locate-path@5.0.0
+474 silly idealTree │ ├── p-limit@2.3.0
+474 silly idealTree │ └── p-locate@4.1.0
+474 silly idealTree ├─┬ pretty-format@27.2.5
+474 silly idealTree │ └── ansi-styles@5.2.0
+474 silly idealTree ├── pretty-ms@7.0.1
+474 silly idealTree ├── printj@1.1.2
+474 silly idealTree ├── process-nextick-args@2.0.1
+474 silly idealTree ├── progress@2.0.1
+474 silly idealTree ├── proxy-from-env@1.1.0
+474 silly idealTree ├── pseudomap@1.0.2
+474 silly idealTree ├── pump@3.0.0
+474 silly idealTree ├─┬ puppeteer-core@10.4.0
+474 silly idealTree │ ├── debug@4.3.1
+474 silly idealTree │ └── devtools-protocol@0.0.901419
+474 silly idealTree ├── query-selector-shadow-dom@1.0.0
+474 silly idealTree ├── queue-microtask@1.2.3
+474 silly idealTree ├── quick-lru@5.1.1
+474 silly idealTree ├─┬ randombytes@2.1.0
+474 silly idealTree │ └── safe-buffer@5.2.1
+474 silly idealTree ├── react-is@17.0.2
+474 silly idealTree ├─┬ read-pkg-up@1.0.1
+474 silly idealTree │ ├── find-up@1.1.2
+474 silly idealTree │ └── path-exists@2.1.0
+474 silly idealTree ├─┬ read-pkg@1.1.0
+474 silly idealTree │ └── path-type@1.1.0
+474 silly idealTree ├── readable-stream@3.6.0
+474 silly idealTree ├── readdir-glob@1.1.1
+474 silly idealTree ├── readdirp@3.6.0
+474 silly idealTree ├── recursive-readdir@2.2.2
+474 silly idealTree ├── require-directory@2.1.1
+474 silly idealTree ├── resolve-alpn@1.2.1
+474 silly idealTree ├── resolve@1.20.0
+474 silly idealTree ├── responselike@2.0.0
+474 silly idealTree ├── resq@1.10.1
+474 silly idealTree ├── restore-cursor@3.1.0
+474 silly idealTree ├── reusify@1.0.4
+474 silly idealTree ├── rgb2hex@0.2.5
+474 silly idealTree ├── rimraf@3.0.2
+474 silly idealTree ├── run-async@2.4.1
+474 silly idealTree ├── run-parallel@1.2.0
+474 silly idealTree ├── rxjs@7.4.0
+474 silly idealTree ├── safe-buffer@5.1.2
+474 silly idealTree ├── safer-buffer@2.1.2
+474 silly idealTree ├── semver@5.7.1
+474 silly idealTree ├── serialize-error@8.1.0
+474 silly idealTree ├── serialize-javascript@6.0.0
+474 silly idealTree ├── signal-exit@3.0.5
+474 silly idealTree ├── slash@3.0.0
+474 silly idealTree ├── spdx-correct@3.1.1
+474 silly idealTree ├── spdx-exceptions@2.3.0
+474 silly idealTree ├── spdx-expression-parse@3.0.1
+474 silly idealTree ├── spdx-license-ids@3.0.10
+474 silly idealTree ├── split2@3.2.2
+474 silly idealTree ├─┬ stack-utils@2.0.5
+474 silly idealTree │ └── escape-string-regexp@2.0.0
+474 silly idealTree ├── stream-buffers@3.0.2
+474 silly idealTree ├─┬ string_decoder@1.3.0
+474 silly idealTree │ └── safe-buffer@5.2.1
+474 silly idealTree ├── string-width@4.2.3
+474 silly idealTree ├── strip-ansi@6.0.1
+474 silly idealTree ├── strip-bom@2.0.0
+474 silly idealTree ├── strip-json-comments@3.1.1
+474 silly idealTree ├── suffix@0.1.1
+474 silly idealTree ├── supports-color@8.1.1
+474 silly idealTree ├─┬ tar-fs@2.0.0
+474 silly idealTree │ └── mkdirp@0.5.5
+474 silly idealTree ├── tar-stream@2.2.0
+474 silly idealTree ├─┬ tcp-port-used@1.0.2
+474 silly idealTree │ └── debug@4.3.1
+474 silly idealTree ├── text-table@0.2.0
+474 silly idealTree ├── through@2.3.8
+474 silly idealTree ├── tmp@0.0.33
+474 silly idealTree ├── to-regex-range@5.0.1
+474 silly idealTree ├─┬ ts-node@10.4.0
+474 silly idealTree │ └── diff@4.0.2
+474 silly idealTree ├── tslib@2.1.0
+474 silly idealTree ├── type-fest@0.20.2
+474 silly idealTree ├── typescript@4.4.4
+474 silly idealTree ├── ua-parser-js@0.7.28
+474 silly idealTree ├── unbzip2-stream@1.3.3
+474 silly idealTree ├── universalify@2.0.0
+474 silly idealTree ├── util-deprecate@1.0.2
+474 silly idealTree ├── uuid@8.3.2
+474 silly idealTree ├── validate-npm-package-license@3.0.4
+474 silly idealTree ├── wcwidth@1.0.1
+474 silly idealTree ├─┬ wdio-chromedriver-service@7.2.2
+474 silly idealTree │ └── fs-extra@9.1.0
+474 silly idealTree ├─┬ webdriver@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├─┬ webdriverio@7.14.1
+474 silly idealTree │ ├── @types/node@15.14.9
+474 silly idealTree │ └── @wdio/types@7.14.1
+474 silly idealTree ├── which@2.0.2
+474 silly idealTree ├── workerpool@6.1.5
+474 silly idealTree ├── wrap-ansi@7.0.0
+474 silly idealTree ├── wrappy@1.0.2
+474 silly idealTree ├── ws@7.4.6
+474 silly idealTree ├── y18n@5.0.8
+474 silly idealTree ├── yallist@2.1.2
+474 silly idealTree ├── yargs-parser@20.2.9
+474 silly idealTree ├── yargs-unparser@2.0.0
+474 silly idealTree ├── yargs@17.2.1
+474 silly idealTree ├─┬ yarn-install@1.0.0
+474 silly idealTree │ ├── ansi-regex@2.1.1
+474 silly idealTree │ ├── ansi-styles@2.2.1
+474 silly idealTree │ ├── chalk@1.1.3
+474 silly idealTree │ ├── strip-ansi@3.0.1
+474 silly idealTree │ └── supports-color@2.0.0
+474 silly idealTree ├── yauzl@2.10.0
+474 silly idealTree ├── yn@3.1.1
+474 silly idealTree ├── yocto-queue@0.1.0
+474 silly idealTree └── zip-stream@4.1.0
+475 silly generateActionsToTake Starting
+476 silly install generateActionsToTake
+477 warn checkPermissions Missing write access to /home/xps-dell/wdio-test/node_modules/@wdio/local-runner/node_modules
+478 warn checkPermissions Missing write access to /home/xps-dell/wdio-test/node_modules/@wdio/mocha-framework/node_modules
+479 warn checkPermissions Missing write access to /home/xps-dell/wdio-test/node_modules/@wdio/spec-reporter/node_modules
+480 silly rollbackFailedOptional Starting
+481 silly rollbackFailedOptional Finishing
+482 silly runTopLevelLifecycles Starting
+483 silly runTopLevelLifecycles Finishing
+484 silly install printInstalled
+485 warn optional Skipping failed optional dependency /chokidar/fsevents:
+486 warn notsup Not compatible with your operating system or architecture: fsevents@2.3.2
+487 warn ts-node@10.4.0 requires a peer of @swc/core@>=1.2.50 but none was installed.
+488 warn ts-node@10.4.0 requires a peer of @swc/wasm@>=1.2.50 but none was installed.
+489 warn ws@7.4.6 requires a peer of bufferutil@^4.0.1 but none was installed.
+490 warn ws@7.4.6 requires a peer of utf-8-validate@^5.0.2 but none was installed.
+491 warn wdio-test No description
+492 warn wdio-test No repository field.
+493 warn wdio-test No license field.
+494 verbose stack Error: EACCES: permission denied, access '/home/xps-dell/wdio-test/node_modules/@wdio/local-runner/node_modules'
+495 verbose cwd /home/xps-dell/wdio-test
+496 error Linux 5.4.0-87-generic
+497 error argv "/usr/bin/node" "/usr/bin/npm" "i"
+498 error node v8.10.0
+499 error npm  v3.5.2
+500 error path /home/xps-dell/wdio-test/node_modules/@wdio/local-runner/node_modules
+501 error code EACCES
+502 error errno -13
+503 error syscall access
+504 error Error: EACCES: permission denied, access '/home/xps-dell/wdio-test/node_modules/@wdio/local-runner/node_modules'
+504 error  { Error: EACCES: permission denied, access '/home/xps-dell/wdio-test/node_modules/@wdio/local-runner/node_modules'
+504 error   errno: -13,
+504 error   code: 'EACCES',
+504 error   syscall: 'access',
+504 error   path: '/home/xps-dell/wdio-test/node_modules/@wdio/local-runner/node_modules' }
+505 error Please try running this command again as root/Administrator.
+506 verbose exit [ -13, true ]
